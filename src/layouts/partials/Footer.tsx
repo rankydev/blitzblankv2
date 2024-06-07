@@ -5,6 +5,7 @@ import Line from "@/components/line";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import social from "@/config/social.json";
+import DynamicIcon from "@/helpers/DynamicIcon";
 import { markdownify } from "@/lib/utils/textConverter";
 import FooterShape1 from "@/shapes/footer-s-1";
 import FooterShape2 from "@/shapes/footer-s-2";
@@ -91,7 +92,7 @@ const Footer = ({
           <div className="sm:col-6 md:col-4 lg:col-4 xl:col-3">
             <div className="widget lg:pl-8">
               <h3 className="widget-title">Email</h3>
-              <div className="mx-auto -mt-1 mb-4 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
+              <div className="mx-auto -mt-1 mb-4 w-fit text-[18px] font-normal text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
                 <a href={`mailto:${email}`}>{email}</a>
               </div>
               {/* <Social
@@ -105,10 +106,12 @@ const Footer = ({
           <div className="sm:col-6 md:col-6 lg:col-3 xl:col-3">
             <div className="xl:pl-16">
               <h3 className="widget-title">Telefon</h3>
-              <div className="mx-auto -mt-1 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
+              <div className="mx-auto -mt-1 w-fit text-[18px] font-normal text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
+                <DynamicIcon icon="FaPhone" className="mr-2 inline-block" />
                 <a href={`tel:${phone}`}>{phone}</a>
               </div>
-              <div className="mx-auto -mt-1 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
+              <div className="mx-auto mt-2 w-fit text-[18px] font-normal text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
+                <DynamicIcon icon="FaMobileScreen" className="mr-2 inline-block" />
                 <a href={`tel:${mobile}`}>{mobile}</a>
               </div>
             </div>
