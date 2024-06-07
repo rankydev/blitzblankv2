@@ -26,7 +26,7 @@ const ContactForm = async () => {
                     <input
                       type="text"
                       className="form-input"
-                      placeholder="Your First Name"
+                      placeholder="Geben Sie bitte Ihren Vornamen ein"
                       id="fname"
                       name="fname"
                       required
@@ -39,7 +39,7 @@ const ContactForm = async () => {
                     <input
                       type="text"
                       className="form-input"
-                      placeholder="Your Last Name"
+                      placeholder="Geben Sie bitte Ihren Nachnamen ein"
                       id="lname"
                       name="lname"
                       required
@@ -52,7 +52,7 @@ const ContactForm = async () => {
                     <input
                       type="email"
                       className="form-input"
-                      placeholder="Your Email Address"
+                      placeholder="Geben Sie bitte Ihre E-Mail Adresse ein"
                       id="email"
                       required
                       name="email"
@@ -78,7 +78,7 @@ const ContactForm = async () => {
                     <textarea
                       name="message"
                       className="form-textarea"
-                      placeholder="Your Message"
+                      placeholder="Geben Sie bitte eine Nachricht ein"
                       id="message"
                       cols={30}
                       required
