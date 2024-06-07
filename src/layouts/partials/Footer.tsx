@@ -47,7 +47,7 @@ const Footer = ({
         <hr className="h-[1px] border-0 border-b border-light/20 border-opacity-30 bg-transparent" />
 
         <div className="row gy-5 py-7 text-center lg:g-4 sm:py-14 sm:text-left">
-          <div className="sm:col-6 md:col-4 lg:col-3 xl:col-3">
+          <div className="sm:col-12 md:col-4 lg:col-3 xl:col-3">
             {/* <div className="widget lg:pl-16">
               <h3 className="widget-title">{company.name}</h3>
               {company.children.length && (
@@ -61,15 +61,16 @@ const Footer = ({
               )}
             </div> */}
             <Image
-              width={164}
-              height={38}
+              className="mx-auto md:mx-0"
+              width={150}
+              height={200}
               src="/images/logo/bblweblogo-nobg.png"
               alt="Blitzblank Gebäudereinigung GmbH Logo"
             />
           </div>
           {/* <!-- End Footer Widget --> */}
           <div className="sm:col-6 md:col-4 lg:col-3 xl:col-3">
-            <div className="widget pl-0 text-white ">
+            <div className="widget pl-0 text-white">
               {/* <h3 className="widget-title">{resources.name}</h3> */}
               {/* {resources.children.length && (
                 <ul className="widget-content">
