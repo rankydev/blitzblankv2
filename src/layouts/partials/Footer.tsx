@@ -20,7 +20,7 @@ const Footer = ({
   hasCallToAction: boolean;
 }) => {
   const { copyright } = config.params;
-  const { email, phone } = config.contact;
+  const { email, phone, mobile } = config.contact;
   const { company, resources } = menu.footer;
 
   return (
@@ -40,39 +40,14 @@ const Footer = ({
             : "z-30 pt-[80px] lg:pt-[130px] "
         }`}
       >
-        <div className="row items-center justify-center pb-10 lg:justify-between">
-          <div className="col-auto">
-            <a>
-              <Image
-                width={164}
-                height={38}
-                src="/images/logo/bblweblogo-nobg.png"
-                alt="Blitzblank Gebäudereinigung GmbH Logo"
-              />
-            </a>
-          </div>
-          {/* <!-- End Site Logo --> */}
-          <div className="pt-10 lg:col-6 lg:pt-0">
-            <form className="mx-auto flex w-full max-w-[600px] flex-col justify-between rounded-md bg-white p-[6px] sm:flex-row lg:ml-auto lg:mr-0 lg:max-w-full">
-              <input
-                type="search"
-                className="w-full border-0 bg-transparent p-4 pl-6 text-center text-lg placeholder:text-neutral-400 focus:border-0 focus:ring-0 sm:text-left md:text-base"
-                placeholder="Enter Your Email Address"
-              />
-              <button type="submit" className="btn btn-primary btn-md">
-                Get A Quote
-              </button>
-            </form>
-          </div>
-          {/* <!-- End Newletter --> */}
-        </div>
+
         {/* <!-- End Footer First Row --> */}
 
         <hr className="h-[1px] border-0 border-b border-light/20 border-opacity-30 bg-transparent" />
 
         <div className="row gy-5 py-7 text-center lg:g-4 sm:py-14 sm:text-left">
           <div className="sm:col-6 md:col-4 lg:col-3 xl:col-3">
-            <div className="widget lg:pl-16">
+            {/* <div className="widget lg:pl-16">
               <h3 className="widget-title">{company.name}</h3>
               {company.children.length && (
                 <ul className="widget-content">
@@ -83,13 +58,19 @@ const Footer = ({
                   ))}
                 </ul>
               )}
-            </div>
+            </div> */}
+            <Image
+              width={164}
+              height={38}
+              src="/images/logo/bblweblogo-nobg.png"
+              alt="Blitzblank Gebäudereinigung GmbH Logo"
+            />
           </div>
           {/* <!-- End Footer Widget --> */}
-          <div className="sm:col-6 md:col-4 lg:col-2 xl:col-2">
-            <div className="widget pl-0">
-              <h3 className="widget-title">{resources.name}</h3>
-              {resources.children.length && (
+          <div className="sm:col-6 md:col-4 lg:col-3 xl:col-3">
+            <div className="widget pl-0 text-white ">
+              {/* <h3 className="widget-title">{resources.name}</h3> */}
+              {/* {resources.children.length && (
                 <ul className="widget-content">
                   {resources.children.map((child, i) => (
                     <li key={i}>
@@ -97,7 +78,13 @@ const Footer = ({
                     </li>
                   ))}
                 </ul>
-              )}
+              )} */}
+              <h3 className="widget-title">Adresse</h3>
+              <ul>
+                <li>Blitzblank Gebäudereinigung GmbH</li>
+                <li>Max-Haller-Straße 2</li>
+                <li>6900 Bregenz</li>
+              </ul>
             </div>
           </div>
           {/* <!-- End Footer Widget --> */}
@@ -107,19 +94,22 @@ const Footer = ({
               <div className="mx-auto -mt-1 mb-4 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
                 <a href={`mailto:${email}`}>{email}</a>
               </div>
-              <Social
+              {/* <Social
                 source={social.main}
                 className="social-icons justify-center sm:justify-start"
-              />
+              /> */}
               {/* <!-- End Social Icons --> */}
             </div>
           </div>
           {/* <!-- End Footer Widget --> */}
           <div className="sm:col-6 md:col-6 lg:col-3 xl:col-3">
             <div className="xl:pl-16">
-              <h3 className="widget-title">Call US</h3>
+              <h3 className="widget-title">Telefon</h3>
               <div className="mx-auto -mt-1 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
                 <a href={`tel:${phone}`}>{phone}</a>
+              </div>
+              <div className="mx-auto -mt-1 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
+                <a href={`tel:${mobile}`}>{mobile}</a>
               </div>
             </div>
           </div>
@@ -127,11 +117,11 @@ const Footer = ({
         </div>
         {/* <!-- End Footer First Row --> */}
 
-        <hr className="h-[1px] border-0 border-b border-light/20 border-opacity-30 bg-transparent" />
+        {/* <hr className="h-[1px] border-0 border-b border-light/20 border-opacity-30 bg-transparent" />
         <p
           className="copyright"
           dangerouslySetInnerHTML={markdownify(copyright)}
-        ></p>
+        ></p> */}
         {/* <!-- End Copyright  --> */}
       </div>
       {/* <!-- End Main Content --> */}

@@ -93,7 +93,7 @@ const Home = () => {
 
               <a
                 data-aos="fade-up-sm"
-                href="#contact"
+                href="#kontakt"
                 className="btn btn-primary btn-lg "
               >Kontaktieren Sie uns</a>
 
@@ -273,6 +273,7 @@ const Home = () => {
         <Line className="line-bg absolute z-20" color="bg-line-sky" />
         {/* <!-- End background lines --> */}
       </section>
+      <section className="pt-[150px]"></section>
       {/* <!-- End Articles Section --> */}
     </>
   );
