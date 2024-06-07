@@ -17,7 +17,7 @@ const Counter = ({
 
   return (
     <>
-      <span className="mb-6 block font-secondary text-3xl font-bold text-dark md:text-4xl xl:text-6xl">
+      <span className="mb-6 block font-secondary text-3xl font-bold text-secondary md:text-4xl xl:text-6xl">
         <CountUp end={count} redraw={true}>
           {({ countUpRef, start }) => (
             <VisibilitySensor
@@ -34,7 +34,7 @@ const Counter = ({
         </CountUp>
         {unit}
       </span>
-      <div className="text-dark md:text-h6 xl:text-h4">{desc}</div>
+      <div className="text-primary md:text-h6 xl:text-h4">{desc}</div>
     </>
   );
 };

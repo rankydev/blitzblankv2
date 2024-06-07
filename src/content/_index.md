@@ -19,9 +19,9 @@ banner:
       - icon: "FaAndroid"
         link: "#?"
   facility:
-    - "Works Anywhere"
-    - "Get Rewarded"
-    - "No Hidden Fees"
+    - "Seriosität"
+    - "Verlässlichkeit"
+    - "Qualität"
 
 # Brands
 brands:
@@ -38,42 +38,57 @@ brands:
 
 # Features
 features:
-  title: "A Technology Approach"
-  subtitle: "WE ARE THE ULTIMATE"
-  description: "Pellen tesque in ipsum id orci porta dapibus. Sed port titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula"
+  title: "Unsere Dienstleistungen"
+  subtitle: ""
+  description: "Unser Service wird von unseren werten Kunden sehr geschätzt."
   button:
-    label: "All Features"
+    label: "Alle Dienstleistungen"
     link: "#?"
     enable: true
   list:
-    - title: "Realtime function"
+    - title: "Baureinigung"
       icon: "FaRegPaperPlane"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
-    - title: "Accurate comment"
+      description: "Die Baureinigung ist eine komplette Feinreinigung nach Bauabschluss. Hier werden alle Oberflächen von Mörtel, Farbe und Schmutz entfernt. Wir kümmern uns um die komplette Säuberung sowohl nach Fertigstellung von Neubauten, Sanierungen und Umbauten als auch nach Brandschäden und Wasserschäden."
+    - title: "Fassadenreinigung"
       icon: "FaRegCopy"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
-    - title: "Plugins support"
+      description: "Ganz egal aus welcher Fassade ihre Immobilie besteht. Durch unsere professionelle Hochdruckreinigung zeigt sich Ihr Gebäude aussen wieder komplett sauber. Aluminiumfassaden und Aluminium Rahmen bekommen von uns eine Imprägnierung, um sie langfristig vor staubigen Umwelteinflüssen zu schützen.
+      Auch Markisen und Jalousien befreien wir von Schmutz und Staub."
+    - title: "Unterhaltsreinigung"
       icon: "FaRegLightbulb"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
-    - title: "All Integrations"
+      description: "Die Unterhaltsreinigung besteht aus wiederholenden Reinigungsarbeiten in einem festgelegten Zeitrahmen. Dabei können unsere Reinigungsarbeiten täglich, wöchentlich, monatlich oder auch in individuellen Zeitabständen erfolgen. Dieser Service dient Ihnen zur Pflege und Werterhaltung von Büros und Geschäftshäusern, Banken, Versicherungen, Behörden, Gastronomie, Schulen, Einkaufszentren, Wohn- und Pflegeheimen, Krankenhäusern und mehr."
+    - title: "Fensterreinigung"
       icon: "FaRegObjectUngroup"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
+      description: "Wir gewähren Ihnen glasklare und streifenfreie Sicht. Fenster aller Art mit und ohne Rahmen, Glastüren, Glastrennwände, Schaufenster, Profilverglasungen, Glasdächer, Wintergärten, Glaskuppeln bekommen von uns wieder den richtigen Glasglanz. Auch große Gebäude- und Fensterhöhen sind für unser blitzblank Team kein Hindernis."
+    - title: "Grundreinigung"
+      icon: "FaRegObjectUngroup"
+      description: "In bestimmten Zeitabständen brauchen Gebäude eine komplette Grundreinigung. Sie dient der generellen Werterhaltung ihrer Immobilie. Dabei werden Räume einer grundlegenden Reinigung unterzogen. 
+      Bei der Grundreinigung entfernen wir haftende Verschmutzungen und abgenützte Pflegeschichten bzw. Rückstände, die das Aussehen der Oberfläche beeinträchtigen."
+    - title: "Bodenpflege"
+      icon: "FaRegObjectUngroup"
+      description: "Gepflegte Böden leben länger und schauen dazu noch schön aus. Bei einer professionellen Bodenreinigung ist die Auswahl der richtigen Reinigungsmittel und Maschinen sehr wichtig. Wir pflegen und schützen Ihre geölten und versiegelten Holzböden im Innen- und Aussenbereich (Terrassen) als auch Ihre Linoleum- und PVC Bodenbeläge. Marmorböden, Granitböden, Kunststeinböden, Fliesenböden sowie Terracotta Platten reinigen und imprägieren wir sorgfältig."
+    - title: "Hausservice"
+      icon: "FaRegObjectUngroup"
+      description: "Unser blitzblank Team bietet Ihnen einen seriösen Hausmeister Full-Service. Wir übernehmen gerne für Sie die regelmäßige Stiegenhausreinigung, Rasenpflege, Schneeräumung und diverse Kleinreparaturen."
+    - title: "Teppich-/ Polsterreinigung"
+      icon: "FaRegObjectUngroup"
+      description: "Teppichböden und Polstermöbel sind durch ihre tägliche Beanspruchung einer hohen Belastung und Verunreinigung ausgesetzt. Für eine fasertiefe und hygienische Reinigung haben wir dafür die richtigen Reinigungsmethoden und -geräte. Mittels tiefgründigem Schamponieren mit anschließender Sprühextraktion, vorsichtiger Fleckenbehandlung und abschließender Imprägnierung machen wir Ihre Spannteppiche und Polster wieder frisch und sauber."
 
 # Process
 process:
-  title: "Don't Take Our Word For It"
-  subtitle: "EXPERIENCE SPEAKS"
-  description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt."
+  title: "Mit den richtigen Hilfsmitteln reinigen"
+  subtitle: "Wir beraten Sie gerne"
+  description: "Damit auch Sie selbst richtig reinigen, bieten wir Ihnen unsere bewährten Reinigungsmittel, Putztücher, Schwämme, Staubtücher an. Sie haben auch die Möglichkeit professionelle Reinigungsgeräte über uns leihweise zu beziehen."
+  description2: "Dazu beraten wir Sie gerne."
   list:
     - title: "Features You will Need"
       description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
-      image: "/images/tab-contents/feature-tab-content-1.jpg"
-    - title: "Increase Your Sales"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
-      image: "/images/tab-contents/feature-tab-content-2.jpg"
-    - title: "Choose Right Plan"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
-      image: "/images/tab-contents/feature-tab-content-3.jpg"
+      image: "/images/tab-contents/Reinigungsmittel-filter.png"
+    # - title: "Increase Your Sales"
+    #   description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+    #   image: "/images/tab-contents/feature-tab-content-2.jpg"
+    # - title: "Choose Right Plan"
+    #   description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+    #   image: "/images/tab-contents/feature-tab-content-3.jpg"
 
 # Projects
 projects:
@@ -105,8 +120,8 @@ feature_post:
 
 #Blog
 blogs:
-  title: "Take a Look at the Latest Articles from Our Blog"
-  subtitle: "Latest Articles"
+  title: "Lust auf eine neue Herausforderung?"
+  subtitle: "Wir stellen ein"
   button:
     label: "Browse All Articles"
     link: "blog/"

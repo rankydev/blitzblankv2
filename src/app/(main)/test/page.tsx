@@ -20,12 +20,12 @@ import {
 } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import BannerShape from "../../shapes/banner-s-1";
-import BannerShape2 from "../../shapes/banner-s-2";
 import { BsCheckLg } from "react-icons/bs";
-import BlogShape1 from "../../shapes/blog-s-1";
-import FeatureShape1 from "../../shapes/feature-s-1";
-import FeatureShape2 from "../../shapes/feature-s-2";
+import BannerShape from "../../../shapes/banner-s-1";
+import BannerShape2 from "../../../shapes/banner-s-2";
+import BlogShape1 from "../../../shapes/blog-s-1";
+import FeatureShape1 from "../../../shapes/feature-s-1";
+import FeatureShape2 from "../../../shapes/feature-s-2";
 const { blog_folder } = config.settings;
 
 const Home = () => {
@@ -77,26 +77,57 @@ const Home = () => {
       <section className="section banner relative overflow-hidden before:z-10 after:z-10">
         <div className="container relative z-30">
           <div className="row items-center">
-            <div className="lg:col-12 text-center">
+            <div className="lg:col-6">
               <h1
                 data-aos="fade-up-sm"
-                className="mb-6 text-[35px] sm:text-[50px] lg:max-w-[1000px] lg:text-[58px] mx-auto"
+                className="mb-6 text-[35px] sm:text-[50px] xl:text-[65px]"
                 dangerouslySetInnerHTML={markdownify(banner.title)}
               ></h1>
               <p
                 data-aos="fade-up-sm"
                 data-aos-delay="150"
-                className="mb-6 text-lg lg:max-w-[600px] mx-auto"
+                className="mb-6 text-lg"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               ></p>
-
-              <a
+              <form
                 data-aos="fade-up-sm"
-                href="#contact"
-                className="btn btn-primary btn-lg "
-              >Kontaktieren Sie uns</a>
-
-              <ul className="flex flex-wrap gap-x-6 gap-y-2 justify-center mt-20">
+                data-aos-delay="200"
+                className="my-10 flex w-full max-w-[600px] flex-col justify-between rounded-md bg-white p-[6px] shadow-md sm:flex-row"
+              >
+                <input
+                  type="search"
+                  className="w-full border-0 bg-transparent p-4 pl-6 text-center text-base placeholder:text-neutral-400 focus:border-0 focus:ring-0 sm:text-left"
+                  placeholder="Enter Your Email Address"
+                />
+                <button type="submit" className="btn btn-primary btn-md">
+                  Get A Quote
+                </button>
+              </form>
+              <span
+                data-aos="fade-right"
+                data-aos-delay="250"
+                className="align-middle text-lg font-bold text-dark text-center"
+              >
+                {support.title}
+              </span>
+              <ul className="mt-2 flex flex-row gap-8 align-middle text-[28px] xs:ml-7 xs:mt-0 xs:inline-flex">
+                {support.list.map((item, i) => (
+                  <li
+                    key={i}
+                    data-aos="fade-in"
+                    className="text-dark"
+                    data-aos-delay={`${300 + 50 * i}`}
+                  >
+                    <a href={item.link}>
+                      <DynamicIcon icon={item.icon} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <div className="py-8">
+                <hr className="h-[1px] border-0 border-b border-border/50 bg-transparent" />
+              </div>
+              <ul className="flex flex-wrap gap-x-6 gap-y-2">
                 {facility.map((text, i) => {
                   return (
                     <li
@@ -104,21 +135,20 @@ const Home = () => {
                       data-aos="fade-in"
                       data-aos-delay={100 + i * 50}
                     >
-                      <BsCheckLg className="mr-2 inline-block text-2xl text-secondary" />
-                      <p className="inline-block align-middle text-lg font-medium text-primary">
+                      <BsCheckLg className="mr-2 inline-block text-2xl text-emerald-400" />
+                      <p className="inline-block align-middle text-lg font-medium text-dark">
                         {text}
                       </p>
                     </li>
                   );
                 })}
               </ul>
-
-              {/* End Hero Section */}
             </div>
+            
           </div>
         </div>
         {/* <!-- End Main Content --> */}
-        {/* <Line className="line-bg absolute z-20" color="bg-line-yellow" /> */}
+        <Line className="line-bg absolute z-20" color="bg-line-yellow" />
         {/* <!-- End background lines --> */}
       </section>
       {/* <!-- End Banner Section --> */}
@@ -126,7 +156,6 @@ const Home = () => {
       <section className="md:section">
         <div className="shadow-default relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
           <div className="container">
-          <span>hier evtl kundenlogos oder namen...</span>
             <div className="row justify-center">
               {brands.map((item, i) => {
                 return (
@@ -235,26 +264,127 @@ const Home = () => {
           <FeatureShape2 className="text-secondary" />
         </div>
         {/* <!-- End Bg Shape --> */}
-        <Line className="line-bg absolute z-20" color="bg-line-primary" />
+        <Line className="line-bg absolute z-20" color="bg-line-sky" />
       </section>
 
       <TabContainer {...process} />
       <CounterWrapper {...projects} />
       {/* <!-- End Showcase Section --> */}
 
-      
+      {feature_post.map((post, i) => {
+        const isEven = (i + 1) % 2 === 0;
+        return (
+          <section
+            key={i}
+            className={`section-lg feature ${
+              isEven ? "triangle-down pt-32" : "triangle-up pb-0"
+            } relative z-20 overflow-hidden`}
+          >
+            <div className="container relative z-20">
+              <div className="row gy-4 items-center">
+                <div
+                  data-aos="fade-left-sm"
+                  className={`lg:col-7 ${isEven ? "order-2" : "order-1"}`}
+                >
+                  <div className={`feature-clip-path-${i + 1} relative`}>
+                    <Image
+                      width={727}
+                      height={613}
+                      src={post.image}
+                      className="mx-auto block"
+                      alt="feature image"
+                    />
+                    {/* <!-- Start Bg Shape --> */}
+                    <div
+                      data-aos="fade-right-sm"
+                      className="pointer-events-none absolute right-[100px] top-[-10px] -z-10 hidden select-none lg:block"
+                    >
+                      <FeatureShape1 className="text-quinary" />
+                    </div>
+                    <div
+                      data-aos="fade-left-sm"
+                      className="pointer-events-none absolute bottom-[130px] left-0 -z-10 hidden select-none lg:block"
+                    >
+                      <FeatureShape2 className="text-secondary" />
+                    </div>
+                    {/* <!-- End Bg Shape --> */}
+                  </div>
+                </div>
+                <div className={`lg:col-5 ${isEven ? "order-1" : "order-2"}`}>
+                  <span
+                    className="mb-6 inline-block font-medium uppercase text-red-400"
+                    data-aos="fade-right-sm"
+                  >
+                    {post.subtitle}
+                  </span>
+                  <div
+                    data-aos="fade-right-sm"
+                    className="mb-6 border-l-2 border-dark border-opacity-50 py-2 pl-6"
+                  >
+                    <h2
+                      className="font-semibold"
+                      data-aos="fade-right-sm"
+                      data-aos-delay="100"
+                    >
+                      {post.title}
+                    </h2>
+                  </div>
+                  <p
+                    className="pl-6 text-lg"
+                    data-aos="fade-right-sm"
+                    data-aos-delay="150"
+                  >
+                    {post.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <Line
+              className="line-bg absolute left-0 top-1/2 z-10 flex h-full w-full -translate-y-1/2 justify-between"
+              color="bg-line-sky"
+            />
+          </section>
+        );
+      })}
       {/* <!-- End Feature Section --> */}
 
-      {/* <Testimonials data={testimonial} /> */}
+      <Testimonials data={testimonial} />
 
       <section className="section-md articles relative z-20 overflow-hidden after:-z-10">
-        <div data-aos="fade-up-sm" className="row pb-12 text-center">
-          <div className="mx-auto lg:col-8 bg-white rounded-2xl shadow-default px-12 py-10 sm:py-14 md:flex-row md:gap-0 list-dotted-line-separator">
-            <div className="adsf">Wir stellen ein</div>
-            <div className="adsf">Lust auf eine neue Herausforderung?</div>
-            <div className="adsf"></div>
+        <div className="container relative z-30">
+          <div className="row items-end justify-between pb-12">
+            <div className="lg:col-8 xl:col-6">
+              <span
+                className="mb-6 inline-block font-medium uppercase text-red-400"
+                data-aos="fade-up-sm"
+              >
+                {blogs.subtitle}
+              </span>
+              <div
+                data-aos="fade-up-sm"
+                className="mb-8 border-l-2 border-dark border-opacity-50 py-2 pl-6 lg:mb-0"
+              >
+                <h2 className="font-semibold" data-aos="fade-up-sm">
+                  {blogs.title}
+                </h2>
+              </div>
+            </div>
+            <div data-aos="fade-right-sm" className="col-auto">
+              <Link
+                href={blogs.button.link}
+                className="btn btn-outline-primary btn-sm"
+              >
+                {blogs.button.label}
+              </Link>
+            </div>
+          </div>
+          <div className="row gy-4">
+            {posts.slice(0, 3).map((post, i) => (
+              <BlogCard key={i} data={post} />
+            ))}
           </div>
         </div>
+
         {/* <!-- Start Bg Shape --> */}
         <div
           data-aos="fade-left-sm"

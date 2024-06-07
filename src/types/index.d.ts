@@ -209,6 +209,7 @@ export type Process = {
   list: {
     title: string;
     description: string;
+    description2: string;
     image: string;
   }[];
 };

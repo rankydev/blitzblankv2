@@ -20,7 +20,7 @@ const TabContainer = ({ description, description2, title, list, subtitle }: Proc
         <div className="row pb-12 text-center">
           <div className="mx-auto lg:col-7">
             <span
-              className="mb-6 inline-block font-medium uppercase text-secondary"
+              className="mb-6 inline-block font-medium uppercase text-red-400"
               data-aos="fade-up-sm"
               data-aos-delay="50"
             >
@@ -41,15 +41,13 @@ const TabContainer = ({ description, description2, title, list, subtitle }: Proc
             </p>
           </div>
         </div>
-        {/* <div className="row gy-4" data-tab-group="">
+        <div className="row gy-4" data-tab-group="">
           <Tablist tabIndex={tabIndex} onTabChange={onTabChange} list={list} />
-          
-        </div> */}
-        <div className="relative xl:col-12" data-aos="fade-in">
+          <div className="relative xl:col-8" data-aos="fade-in">
             <div className="active shadow-default group relative">
               <div className="invisible h-0 opacity-70 transition-opacity duration-300 group-[.active]:visible group-[.active]:h-full group-[.active]:opacity-100">
                 <Image
-                  width={1024}
+                  width={840}
                   height={610}
                   src={content.image}
                   alt="feature image"
@@ -69,10 +67,11 @@ const TabContainer = ({ description, description2, title, list, subtitle }: Proc
               data-aos="fade-down-md"
               className="pointer-events-none absolute bottom-[-50px] right-[-40px] -z-10 hidden select-none lg:block"
             >
-              {/* <ShowcaseShape2 className="text-quaternary" /> */}
+              <ShowcaseShape2 className="text-quaternary" />
             </div>
             {/* <!-- End Bg Shape --> */}
           </div>
+        </div>
       </div>
     </section>
   );
