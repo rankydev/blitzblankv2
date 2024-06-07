@@ -27,6 +27,7 @@ import BlogShape1 from "../../shapes/blog-s-1";
 import FeatureShape1 from "../../shapes/feature-s-1";
 import FeatureShape2 from "../../shapes/feature-s-2";
 const { blog_folder } = config.settings;
+import ContactForm from '@/components/ContactForm';
 
 const Home = () => {
   const homepage = getListPage("_index.md");

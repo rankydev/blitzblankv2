@@ -27,7 +27,7 @@ const Footer = ({
     <footer
       className={`${
         !hasCallToAction ? "footer-alt" : ""
-      } relative z-20 bg-theme-dark after:absolute after:left-0 after:top-0 after:-z-10 after:h-[400px] after:w-full after:bg-[white] after:content-['']`}
+      } relative z-20 bg-primary after:absolute after:left-0 after:top-0 after:-z-10 after:h-[400px] after:w-full after:bg-[white] after:content-['']`}
     >
       {/* <!-- End Call To Action --> */}
       {children}
@@ -42,12 +42,12 @@ const Footer = ({
       >
         <div className="row items-center justify-center pb-10 lg:justify-between">
           <div className="col-auto">
-            <a href="index.html">
+            <a>
               <Image
                 width={164}
                 height={38}
-                src="/images/logo-light.png"
-                alt="spydea"
+                src="/images/logo/bblweblogo-nobg.png"
+                alt="Blitzblank Gebäudereinigung GmbH Logo"
               />
             </a>
           </div>

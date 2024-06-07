@@ -61,11 +61,11 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
         <nav className="navbar container relative z-30">
           <Link href="/" className="navbar-brand">
             <Image
-              width={30}
-              height={60}
-              src="/images/blitzblank-logo.svg"
+              width={233}
+              height={246}
+              src="/images/logo/bblweblogo-nobg.png"
               alt="Blitzblank Gebäudereinigung Gmbh Logo"
-              style={{ width: '40px', height: '70px' }}
+              style={{ width: '233px', height: '246px' }}
             />
           </Link>
           {/* <!-- End logo --> */}

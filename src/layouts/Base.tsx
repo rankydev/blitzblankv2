@@ -2,6 +2,7 @@ import CallToAction from "@/partials/CallToAction";
 import Footer from "@/partials/Footer";
 import Header from "@/partials/Header";
 import { Call_to_action } from "@/types";
+import ContactForm from '@/components/ContactForm';
 
 const Base = ({
   backgroundColor = "bg-quaternary/20",
@@ -22,7 +23,8 @@ const Base = ({
         <Footer
           hasCallToAction={isNotFoundPage ? !isNotFoundPage : !!callToAction}
         >
-          {!isNotFoundPage && <CallToAction callToAction={callToAction} />}
+          {/* {!isNotFoundPage && <CallToAction callToAction={callToAction} />} */}
+          {!isNotFoundPage && <ContactForm />}
         </Footer>
       )}
     </>
