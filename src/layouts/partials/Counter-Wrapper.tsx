@@ -13,7 +13,7 @@ const CounterWrapper = ({
 }: Projects) => {
   return (
     <>
-      <section className="section relative z-20 overflow-hidden">
+      <section className="section counter relative z-20 overflow-hidden">
         <div className="container">
           <div data-aos="fade-up-sm" className="row pb-12 text-center">
             <div className="mx-auto lg:col-8">

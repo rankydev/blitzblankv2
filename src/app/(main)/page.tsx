@@ -106,7 +106,7 @@ const Home = () => {
                       data-aos="fade-in"
                       data-aos-delay={100 + i * 50}
                     >
-                      <BsCheckLg className="mr-2 inline-block text-2xl text-secondary" />
+                      {/* <BsCheckLg className="mr-2 inline-block text-2xl text-secondary" /> */}
                       <p className="inline-block align-middle text-lg font-medium text-primary">
                         {text}
                       </p>
@@ -154,9 +154,9 @@ const Home = () => {
       </section>
       {/* <!-- End Brands Section --> */}
 
-      <section className="section relative z-20 overflow-hidden after:-z-10">
+      {/* <section className="section relative z-20 overflow-hidden after:-z-10">
         <Services features={features} />
-      </section>
+      </section> */}
 
       <section className="section features relative z-20 overflow-hidden after:-z-10">
         <div className="container relative z-30">
@@ -188,43 +188,8 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div
-              className="col-auto"
-              data-aos="fade-right-sm"
-              data-aos-delay="150"
-            >
-              <Link
-                aria-disabled={!features.button.enable}
-                className="btn btn-outline-primary btn-sm"
-                href={features.button.link}
-              >
-                {features.button.label}
-              </Link>
-            </div>
           </div>
-          <div className="colored-box-icon row gy-4">
-            {features.list.map((feature, i) => {
-              const { title, icon, description } = feature;
-              return (
-                <div
-                  key={i}
-                  data-aos="fade-up-sm"
-                  data-aos-delay={`${200 + i * 50}`}
-                  className="md:col-6 lg:col-4 xl:col-3"
-                >
-                  <div className="h-full rounded-2xl border border-border/30 bg-white px-8 py-12 transition-all duration-300 hover:shadow-sm">
-                    <div className="icon-box">
-                      <DynamicIcon icon={icon} />
-                    </div>
-                    <h3 className="mb-6 text-xl font-semibold sm:text-2xl">
-                      {title}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <Services features={features} />
         </div>
 
         {/* <!-- Start Bg Shape --> */}
@@ -244,7 +209,7 @@ const Home = () => {
         <Line className="line-bg absolute z-20" color="bg-line-primary" />
       </section>
 
-      <TabContainer {...process} />
+      {/* <TabContainer {...process} /> */}
       <CounterWrapper {...projects} />
       {/* <!-- End Showcase Section --> */}
 
@@ -253,13 +218,20 @@ const Home = () => {
 
       {/* <Testimonials data={testimonial} /> */}
 
-      <section className="section-md articles relative z-20 overflow-hidden after:-z-10">
-        <div data-aos="fade-up-sm" className="row pb-12 text-center">
+      <section className="section-md jobs relative z-20 overflow-hidden after:-z-10 pb-0">
+        {/* <div data-aos="fade-up-sm" className="row pb-12 text-center">
           <div className="mx-auto lg:col-8 bg-white rounded-2xl shadow-default px-12 py-10 sm:py-14 md:flex-row md:gap-0 list-dotted-line-separator">
             <div className="adsf">Wir stellen ein</div>
             <div className="adsf">Lust auf eine neue Herausforderung?</div>
             <div className="adsf"></div>
           </div>
+
+        </div> */}
+        
+        <div data-aos="fade-up-sm" className="container pb-12 w-1/2 mx-auto">
+          <h2 className="mb-6 text-3xl font-semibold text-white">Werden Sie Teil unseres Teams</h2>
+          <p className="mb-12 text-white text-2xl leading-9">Wir sind stets auf der Suche nach engagierten und erfahrenen Teammitgliedern in den Bereichen <span className="text-secondary font-bold">Raumpflege</span> und <span className="text-secondary font-bold">Gebäudereinigung</span>.</p>
+          <p className="text-white text-2xl leading-9">Wenn Sie Interesse daran haben, in einem <span className="underline">dynamischen</span> und <span className="underline">freundlichen</span> Umfeld zu arbeiten, senden Sie uns gerne Ihre Bewerbungsunterlagen per Mail zu.</p>
         </div>
         {/* <!-- Start Bg Shape --> */}
         <div
@@ -275,10 +247,10 @@ const Home = () => {
           <BlogShape1 className="text-quinary" />
         </div>
         {/* <!-- End Bg Shape --> */}
-        <Line className="line-bg absolute z-20" color="bg-line-sky" />
+        {/* <Line className="line-bg absolute z-20 opacity-20" color="bg-line-sky" /> */}
         {/* <!-- End background lines --> */}
       </section>
-      <section className="pt-[150px]"></section>
+      {/* <section className="pt-[150px]"></section> */}
       {/* <!-- End Articles Section --> */}
     </>
   );

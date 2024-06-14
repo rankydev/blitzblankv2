@@ -355,6 +355,9 @@
   &::after {
     @apply absolute left-0 top-0 h-full w-full bg-quaternary/20 content-[""];
 
+    // background-image: url('/images/hero-background.png');
+    // background-size: cover;
+
     clip-path: polygon(0 -1%, 100% 0, 100% 90%, 0 50%);
     @media screen and (max-width: 1320px) {
       clip-path: polygon(0 -1%, 100% 0, 100% 90%, 0 50%);
@@ -649,12 +652,20 @@
   }
 }
 
+.jobs {
+  @apply bg-primary;
+}
+
+.counter {
+  @apply py-[60px] md:pt-[100px] md:pb-[200px];
+}
 // ---------------------------------------------
 // Footer
 // ---------------------------------------------
 footer {
   &::after {
-    clip-path: polygon(0 -1px, 100% -1px, 100% 100%, 0 38%);
+    // clip-path: polygon(0 -1px, 100% -1px, 100% 100%, 0 38%);
+    clip-path: polygon(0 0px, 0% 0px, 100% 100%, 0 0%);
 
     @media screen and (max-width: 1023px) {
       clip-path: polygon(0 -1px, 100% -1px, 100% 85%, 0% 30%);
