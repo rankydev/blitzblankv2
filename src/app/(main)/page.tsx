@@ -28,6 +28,7 @@ import FeatureShape1 from "../../shapes/feature-s-1";
 import FeatureShape2 from "../../shapes/feature-s-2";
 const { blog_folder } = config.settings;
 import ContactForm from '@/components/ContactForm';
+import Services from '@/components/Services';
 
 const Home = () => {
   const homepage = getListPage("_index.md");
@@ -152,6 +153,10 @@ const Home = () => {
         </div>
       </section>
       {/* <!-- End Brands Section --> */}
+
+      <section className="section relative z-20 overflow-hidden after:-z-10">
+        <Services features={features} />
+      </section>
 
       <section className="section features relative z-20 overflow-hidden after:-z-10">
         <div className="container relative z-30">

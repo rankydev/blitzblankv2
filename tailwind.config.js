@@ -76,6 +76,25 @@ module.exports = {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
       },
+      animation: {
+        bounce: 'bounce 1s'
+      },
+      keyframes: {
+        bounce: {
+          '0%': {
+            'transform': 'translateY(-1%)',
+            // 'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            'transform': 'translateY(1%)',
+            // 'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+          '100%': {
+            'transform': 'translateY(0%)',
+            // 'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)',
+          }
+        },
+      },
     },
   },
   plugins: [

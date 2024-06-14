@@ -1,0 +1,43 @@
+/* styles/Services.module.css */
+.container {
+    position: relative;
+  }
+  
+  .row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allows wrapping for responsive design */
+  }
+  
+  .serviceItem {
+    transition: all 0.3s ease;
+  }
+  
+  .expanded {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 1rem;
+    transform: translateY(-100%);
+  }
+  
+  .compact {
+    flex: 1;
+    max-width: calc(25% - 1rem);
+  }
+  
+  @media (max-width: 768px) {
+    .compact {
+      max-width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .compact {
+      max-width: 100%;
+    }
+  }
+  
