@@ -27,8 +27,8 @@ import BlogShape1 from "../../shapes/blog-s-1";
 import FeatureShape1 from "../../shapes/feature-s-1";
 import FeatureShape2 from "../../shapes/feature-s-2";
 const { blog_folder } = config.settings;
-import ContactForm from '@/components/ContactForm';
-import Services from '@/components/Services';
+import ContactForm from "@/components/ContactForm";
+import Services from "@/components/Services";
 
 const Home = () => {
   const homepage = getListPage("_index.md");
@@ -96,7 +96,9 @@ const Home = () => {
                 data-aos="fade-up-sm"
                 href="#kontakt"
                 className="btn btn-primary btn-lg "
-              >Kontaktieren Sie uns</a>
+              >
+                Kontaktieren Sie uns
+              </a>
 
               <ul className="flex flex-wrap gap-x-6 gap-y-2 justify-center mt-20">
                 {facility.map((text, i) => {
@@ -128,7 +130,7 @@ const Home = () => {
       <section className="md:section">
         <div className="shadow-default relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
           <div className="container">
-          <span>hier evtl kundenlogos oder namen...</span>
+            <span>hier evtl kundenlogos oder namen...</span>
             <div className="row justify-center">
               {brands.map((item, i) => {
                 return (
@@ -213,7 +215,6 @@ const Home = () => {
       <CounterWrapper {...projects} />
       {/* <!-- End Showcase Section --> */}
 
-      
       {/* <!-- End Feature Section --> */}
 
       {/* <Testimonials data={testimonial} /> */}
@@ -227,11 +228,23 @@ const Home = () => {
           </div>
 
         </div> */}
-        
+
         <div data-aos="fade-up-sm" className="container pb-12 w-1/2 mx-auto">
-          <h2 className="mb-6 text-3xl font-semibold text-white">Werden Sie Teil unseres Teams</h2>
-          <p className="mb-12 text-white text-2xl leading-9">Wir sind stets auf der Suche nach engagierten und erfahrenen Teammitgliedern in den Bereichen <span className="text-secondary font-bold">Raumpflege</span> und <span className="text-secondary font-bold">Gebäudereinigung</span>.</p>
-          <p className="text-white text-2xl leading-9">Wenn Sie Interesse daran haben, in einem <span className="underline">dynamischen</span> und <span className="underline">freundlichen</span> Umfeld zu arbeiten, senden Sie uns gerne Ihre Bewerbungsunterlagen per Mail zu.</p>
+          <h2 className="mb-6 text-4xl font-semibold text-white">
+            Werden Sie Teil unseres Teams
+          </h2>
+          <p className="mb-8 text-white text-xl leading-9">
+            Wir sind stets auf der Suche nach engagierten und erfahrenen
+            Teammitgliedern in den Bereichen{" "}
+            <span className="text-secondary font-bold">Raumpflege</span> und{" "}
+            <span className="text-secondary font-bold">Gebäudereinigung</span>.
+          </p>
+          <p className="text-white text-xl leading-9">
+            Wenn Sie Interesse daran haben, in einem{" "}
+            <span className="underline">dynamischen</span> und{" "}
+            <span className="underline">freundlichen</span> Umfeld zu arbeiten,
+            senden Sie uns gerne Ihre Bewerbungsunterlagen per Mail zu.
+          </p>
         </div>
         {/* <!-- Start Bg Shape --> */}
         <div
