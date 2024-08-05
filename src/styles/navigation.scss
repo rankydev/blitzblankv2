@@ -74,6 +74,10 @@
   &:first-child .nav-link {
     @apply lg:pl-0;
   }
+
+  &:last-child .nav-link {
+    @apply lg:pr-0;
+  }
 }
 
 .nav-link {
@@ -81,6 +85,10 @@
 
   .arrow-icon {
     @apply relative -z-10 text-[12px];
+  }
+
+  &:hover {
+    @apply text-secondary;
   }
 }
 

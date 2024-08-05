@@ -78,6 +78,13 @@ const Home = () => {
       <SeoMeta {...frontmatter} />
       <section className="section banner relative overflow-hidden before:z-10 after:z-10">
         <div className="container relative z-30">
+          {/* <Image
+            width={1920}
+            height={1024}
+            src="/images/hero-bg.jpg"
+            alt="brand logo"
+            className="inline-block py-4 sm:mx-auto"
+          /> */}
           <div className="row items-center">
             <div className="lg:col-12 text-center">
               <h1
@@ -219,7 +226,7 @@ const Home = () => {
 
       {/* <Testimonials data={testimonial} /> */}
 
-      <section className="section-md jobs relative z-20 overflow-hidden after:-z-10 pb-0">
+      <section className="section-md jobs relative z-20 overflow-hidden after:-z-10 pb-0 mb-[-48px]">
         {/* <div data-aos="fade-up-sm" className="row pb-12 text-center">
           <div className="mx-auto lg:col-8 bg-white rounded-2xl shadow-default px-12 py-10 sm:py-14 md:flex-row md:gap-0 list-dotted-line-separator">
             <div className="adsf">Wir stellen ein</div>
@@ -229,7 +236,7 @@ const Home = () => {
 
         </div> */}
 
-        <div data-aos="fade-up-sm" className="container pb-12 w-1/2 mx-auto">
+        <div data-aos="fade-up-sm" className="container pb-12 lg:w-1/2 mx-auto">
           <h2 className="mb-6 text-4xl font-semibold text-white">
             Werden Sie Teil unseres Teams
           </h2>

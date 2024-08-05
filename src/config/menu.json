@@ -1,6 +1,10 @@
 {
   "main": [
     {
+      "name": "Über uns",
+      "url": "/ueber-uns"
+    },
+    {
       "name": "Kontakt",
       "url": "#kontakt"
     }
