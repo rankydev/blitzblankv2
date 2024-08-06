@@ -1,48 +1,30 @@
-import BlogCard from "@/components/BlogCard";
-import TabContainer from "@/components/TabContainer";
-import Line from "@/components/line";
-import config from "@/config/config.json";
 import DynamicIcon from "@/helpers/DynamicIcon";
-import { getListPage, getSinglePage } from "@/lib/contentParser";
+import Line from "@/components/line";
+import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import CounterWrapper from "@/partials/Counter-Wrapper";
 import SeoMeta from "@/partials/SeoMeta";
-import Testimonials from "@/partials/Testimonials";
 import AboutShape1 from "@/shapes/about-s-1";
 import {
   Blogs,
   Button,
   Feature,
-  Post,
   Process,
   Projects,
-  Testimonial,
 } from "@/types";
 import Image from "next/image";
-import Link from "next/link";
-import BannerShape from "../../shapes/banner-s-1";
-import BannerShape2 from "../../shapes/banner-s-2";
-import { BsCheckLg } from "react-icons/bs";
-import BlogShape1 from "../../shapes/blog-s-1";
-import FeatureShape1 from "../../shapes/feature-s-1";
-import FeatureShape2 from "../../shapes/feature-s-2";
-const { blog_folder } = config.settings;
-import ContactForm from "@/components/ContactForm";
 import Services from "@/components/Services";
+import Brush from '@/shapes/lottie/Brush';
+import Spray from '@/shapes/lottie/Spray';
 
 const Home = () => {
   const homepage = getListPage("_index.md");
-  const posts: Post[] = getSinglePage(blog_folder);
-  const testimonial: Testimonial = getListPage("sections/testimonial.md");
   const { frontmatter } = homepage;
   const {
     banner,
     brands,
     features,
     projects,
-    process,
-    feature_post,
-    blogs,
   }: {
     banner: {
       title: string;
@@ -71,20 +53,13 @@ const Home = () => {
     projects: Projects;
     blogs: Blogs;
   } = frontmatter;
-  const { images, support, facility } = banner || {};
+  const { facility } = banner || {};
 
   return (
     <>
       <SeoMeta {...frontmatter} />
-      <section className="section banner relative overflow-hidden before:z-10 after:z-10">
+      <section className="section bg-image relative overflow-hidden before:z-10 after:z-10 pb-[550px]">
         <div className="container relative z-30">
-          {/* <Image
-            width={1920}
-            height={1024}
-            src="/images/hero-bg.jpg"
-            alt="brand logo"
-            className="inline-block py-4 sm:mx-auto"
-          /> */}
           <div className="row items-center">
             <div className="lg:col-12 text-center">
               <h1
@@ -107,16 +82,16 @@ const Home = () => {
                 Kontaktieren Sie uns
               </a>
 
-              <ul className="flex flex-wrap gap-x-6 gap-y-2 justify-center mt-20">
+              <ul className="flex flex-wrap gap-x-4 md:gap-x-6 gap-y-2 justify-center mt-20">
                 {facility.map((text, i) => {
                   return (
                     <li
                       key={i}
                       data-aos="fade-in"
-                      data-aos-delay={100 + i * 50}
+                      data-aos-delay={100 + i * 100}
                     >
-                      {/* <BsCheckLg className="mr-2 inline-block text-2xl text-secondary" /> */}
-                      <p className="inline-block align-middle text-lg font-medium text-primary">
+                      <p className="inline-block align-middle text-base lg:text-lg font-medium text-primary">
+                        <DynamicIcon icon="FaCheck" className="mr-2 inline-block text-amber-500" />
                         {text}
                       </p>
                     </li>
@@ -129,7 +104,6 @@ const Home = () => {
           </div>
         </div>
         {/* <!-- End Main Content --> */}
-        {/* <Line className="line-bg absolute z-20" color="bg-line-yellow" /> */}
         {/* <!-- End background lines --> */}
       </section>
       {/* <!-- End Banner Section --> */}
@@ -162,10 +136,6 @@ const Home = () => {
         </div>
       </section>
       {/* <!-- End Brands Section --> */}
-
-      {/* <section className="section relative z-20 overflow-hidden after:-z-10">
-        <Services features={features} />
-      </section> */}
 
       <section className="section features relative z-20 overflow-hidden after:-z-10">
         <div className="container relative z-30">
@@ -204,38 +174,25 @@ const Home = () => {
         {/* <!-- Start Bg Shape --> */}
         <div
           data-aos="fade-left-sm"
-          className="pointer-events-none absolute top-0 hidden select-none min-[1440px]:block"
+          className="pointer-events-none absolute top-0 -left-32 hidden select-none min-[1440px]:block"
         >
-          <FeatureShape1 className="text-quaternary" />
+          <Spray />
         </div>
         <div
           data-aos="fade-right-sm"
-          className="pointer-events-none absolute right-0 top-52 hidden select-none lg:block"
+          className="pointer-events-none absolute -right-32 top-[470px] hidden select-none lg:block w-[400px]"
         >
-          <FeatureShape2 className="text-secondary" />
+          <Brush />
         </div>
         {/* <!-- End Bg Shape --> */}
         <Line className="line-bg absolute z-20" color="bg-line-primary" />
       </section>
 
-      {/* <TabContainer {...process} /> */}
       <CounterWrapper {...projects} />
       {/* <!-- End Showcase Section --> */}
-
       {/* <!-- End Feature Section --> */}
 
-      {/* <Testimonials data={testimonial} /> */}
-
       <section className="section-md jobs relative z-20 overflow-hidden after:-z-10 pb-0 mb-[-48px]">
-        {/* <div data-aos="fade-up-sm" className="row pb-12 text-center">
-          <div className="mx-auto lg:col-8 bg-white rounded-2xl shadow-default px-12 py-10 sm:py-14 md:flex-row md:gap-0 list-dotted-line-separator">
-            <div className="adsf">Wir stellen ein</div>
-            <div className="adsf">Lust auf eine neue Herausforderung?</div>
-            <div className="adsf"></div>
-          </div>
-
-        </div> */}
-
         <div data-aos="fade-up-sm" className="container pb-12 lg:w-1/2 mx-auto">
           <h2 className="mb-6 text-4xl font-semibold text-white">
             Werden Sie Teil unseres Teams
@@ -264,13 +221,10 @@ const Home = () => {
           data-aos="fade-right-sm"
           className="pointer-events-none absolute right-0 top-52 hidden select-none lg:block"
         >
-          <BlogShape1 className="text-quinary" />
         </div>
         {/* <!-- End Bg Shape --> */}
-        {/* <Line className="line-bg absolute z-20 opacity-20" color="bg-line-sky" /> */}
         {/* <!-- End background lines --> */}
       </section>
-      {/* <section className="pt-[150px]"></section> */}
       {/* <!-- End Articles Section --> */}
     </>
   );

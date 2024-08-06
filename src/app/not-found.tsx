@@ -1,8 +1,6 @@
 import ImageFallback from "@/helpers/ImageFallback";
-import MDXContent from "@/helpers/MDXContent";
 import Base from "@/layouts/Base";
 import { getListPage } from "@/lib/contentParser";
-import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import { Call_to_action, RegularPage } from "@/types";
 import Link from "next/link";
@@ -12,7 +10,7 @@ const NotFound = async () => {
   const callToAction: Call_to_action = getListPage(
     "sections/call-to-action.md",
   );
-  const { image, title } = data.frontmatter;
+  const { image } = data.frontmatter;
 
   return (
     <Base
@@ -34,13 +32,9 @@ const NotFound = async () => {
               />
               <h1
                 className="h2 mb-4"
-                dangerouslySetInnerHTML={markdownify(title)}
-              ></h1>
-              <div className="content">
-                <MDXContent content={data.content} />
-              </div>
+              >Die Seite nicht gefunden.</h1>
               <Link href="/" className="btn btn-primary mt-8">
-                Back To Home
+                Zur Startseite
               </Link>
             </div>
           </div>
