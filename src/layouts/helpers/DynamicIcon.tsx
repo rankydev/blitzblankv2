@@ -7,6 +7,7 @@ type IconMap = Record<string, IconType>;
 interface IDynamicIcon {
   icon: string;
   className?: string;
+  onClick?: () => void;
 }
 
 const iconLibraries: { [key: string]: IconMap } = {

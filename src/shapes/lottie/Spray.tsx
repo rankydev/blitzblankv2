@@ -2,7 +2,7 @@
 
 import { useRef, Suspense } from 'react'
 import Lottie from 'lottie-react'
-import animation from '/public/animations/spray.json'
+import animation from '../../../public/animations/spray.json'
 
 export default function Spray() {
     const sprayRef = useRef(null)

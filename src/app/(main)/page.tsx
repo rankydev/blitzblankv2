@@ -5,13 +5,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import CounterWrapper from "@/partials/Counter-Wrapper";
 import SeoMeta from "@/partials/SeoMeta";
 import AboutShape1 from "@/shapes/about-s-1";
-import {
-  Blogs,
-  Button,
-  Feature,
-  Process,
-  Projects,
-} from "@/types";
+import { Button, Feature, Process, Projects } from "@/types";
 import Image from "next/image";
 import Services from "@/components/Services";
 import Brush from '@/shapes/lottie/Brush';
@@ -51,7 +45,6 @@ const Home = () => {
     features: Feature;
     process: Process;
     projects: Projects;
-    blogs: Blogs;
   } = frontmatter;
   const { facility } = banner || {};
 

@@ -2,7 +2,7 @@
 
 import { useRef, Suspense } from 'react'
 import Lottie from 'lottie-react'
-import animation from '/public/animations/brush.json'
+import animation from '../../../public/animations/brush.json'
 
 export default function Brush() {
     const brushRef = useRef(null)
