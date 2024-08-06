@@ -27,7 +27,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
   const { navigation_buttons } = config;
   const pathname = usePathname();
   const header = useRef<HTMLElement>(null);
-  const [isExpand, setExapnd] = useState(false);
+  const [isExpand, setExpand] = useState(false);
 
   useEffect(() => {
     function stickyHeader() {
@@ -45,11 +45,11 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
   }, []);
 
   const onExapndChange = () => {
-    setExapnd(!isExpand);
+    setExpand(!isExpand);
   };
 
   useEffect(() => {
-    setExapnd(false);
+    setExpand(false);
   }, [pathname]);
 
   return (
@@ -59,7 +59,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
 
       <header ref={header} className={`header z-50 ${backgroundColor}`}>
         <nav className="navbar container relative z-30">
-          <Link href="/" className="navbar-brand">
+          <Link href="/" className="navbar-brand" onClick={() => setExpand(false)}>
             <Image
               width={60}
               height={90}
@@ -130,7 +130,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
                       </li>
                     ) : (
                       <li key={i} className="nav-item">
-                        <Link href={item.url} className="nav-link">
+                        <Link href={item.url} className="nav-link" onClick={onExapndChange}>
                           {item.name}
                         </Link>
                       </li>

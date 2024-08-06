@@ -47,6 +47,8 @@
       display: none;
     }
     .navbar {
+      @apply py-0;
+      
       @media screen and (min-width: 1024px) {
         @apply py-3;
       }
