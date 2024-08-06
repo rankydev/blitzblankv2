@@ -40,7 +40,7 @@ function About() {
             height="100%"
             className="lg:w-3/4 h-full min-h-[400px] lg:h-[500px] mx-auto"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen={false}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
