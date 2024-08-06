@@ -107,6 +107,27 @@
   }
 }
 
+.bg-image {
+  @apply bg-cover bg-top bg-no-repeat bg-quaternary/20;
+  // background-image: url("/images/bg-image.png");
+
+  &::after {
+    @apply bg-cover bg-top bg-no-repeat;
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/bg-image-mobile.png");
+
+    @media screen and (min-width: 1320px) {
+      background-image: url("/images/bg-image.png");
+    }
+  }
+}
+
 // Container
 .container {
   @apply mx-auto;
@@ -341,6 +362,16 @@
 // ---------------------------------------------
 // Banner Section
 .banner {
+  // Banner without edge (no clippath)
+  &--no-edge {
+    &::before {
+      @apply absolute left-0 top-0 h-full w-full bg-white content-[""];
+    }
+    &::after {
+      @apply absolute left-0 top-0 h-full w-full bg-quaternary/20 content-[""];
+    }
+  }
+
   &::before {
     @apply absolute left-0 top-0 h-full w-full bg-white content-[""];
 
@@ -649,15 +680,24 @@
   }
 }
 
+.jobs {
+  @apply bg-primary;
+}
+
+.counter {
+  @apply py-[60px] md:pt-[100px] md:pb-[200px];
+}
 // ---------------------------------------------
 // Footer
 // ---------------------------------------------
 footer {
   &::after {
-    clip-path: polygon(0 -1px, 100% -1px, 100% 100%, 0 38%);
+    // clip-path: polygon(0 -1px, 100% -1px, 100% 100%, 0 38%);
+    clip-path: polygon(0 0px, 0% 0px, 100% 100%, 0 0%);
+    // clip-path: polygon(0 -1px, 100% -1px, 100% 85%, 0% 30%);
 
     @media screen and (max-width: 1023px) {
-      clip-path: polygon(0 -1px, 100% -1px, 100% 85%, 0% 30%);
+      // clip-path: polygon(0 -1px, 100% -1px, 100% 85%, 0% 30%);
     }
   }
 

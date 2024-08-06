@@ -25,3 +25,7 @@
 .btn-outline {
   @apply border border-white text-white hover:bg-primary hover:text-white;
 }
+
+.btn-underline {
+  @apply text-primary border-b rounded-none p-2 pb-0 border-primary hover:text-secondary hover:border-secondary font-semibold;
+}

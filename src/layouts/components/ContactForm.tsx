@@ -11,9 +11,9 @@ const ContactForm = async () => {
   
     return (
         // <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem]">
-        <div id="kontakt" className="container relative z-30 pt-[150px]">
+        <div id="kontakt" className="container relative z-30 pt-24 lg:pt-[150px]">
           <div className="row relative">
-            <div className="mx-auto md:col-10">
+            <div className="mx-auto lg:col-10">
               <div
                 data-aos="fade-up-sm"
                 className="shadow-default rounded-2xl bg-white px-8 py-10 sm:px-16 sm:py-14"

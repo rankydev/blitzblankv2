@@ -1,8 +1,6 @@
 "use client";
 
 import Counter from "@/components/Counter";
-import FunFactShape1 from "@/shapes/fun-fact-s-1";
-import FunFactShape2 from "@/shapes/fun-fact-s-2";
 import { Projects } from "@/types";
 
 const CounterWrapper = ({
@@ -13,7 +11,7 @@ const CounterWrapper = ({
 }: Projects) => {
   return (
     <>
-      <section className="section relative z-20 overflow-hidden">
+      <section className="section counter relative z-20 overflow-hidden">
         <div className="container">
           <div data-aos="fade-up-sm" className="row pb-12 text-center">
             <div className="mx-auto lg:col-8">
@@ -52,14 +50,12 @@ const CounterWrapper = ({
                 data-aos-delay="50"
                 className="pointer-events-none absolute bottom-[-55px] left-[-30px] -z-10 hidden select-none lg:block"
               >
-                <FunFactShape1 className="text-quinary" />
               </div>
               <div
                 data-aos="fade-down-md"
                 data-aos-delay="50"
                 className="pointer-events-none absolute right-[-40px] top-[40px] -z-10 hidden select-none lg:block"
               >
-                <FunFactShape2 className="text-secondary" />
               </div>
               {/* <!-- End Bg Shape --> */}
             </div>

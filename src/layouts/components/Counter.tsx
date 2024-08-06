@@ -1,8 +1,8 @@
 "use client";
 
 import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
-import { useState } from "react";
+import { useRef } from "react";
+import { useInView } from "framer-motion"
 
 const Counter = ({
   count,
@@ -13,26 +13,23 @@ const Counter = ({
   desc: string;
   unit: string;
 }) => {
-  const [vizSensorActive, setVizSensorActive] = useState(true);
+
+  const container = useRef(null);
+  const isInView = useInView(container, { once: true })
 
   return (
     <>
-      <span className="mb-6 block font-secondary text-3xl font-bold text-secondary md:text-4xl xl:text-6xl">
-        <CountUp end={count} redraw={true}>
-          {({ countUpRef, start }) => (
-            <VisibilitySensor
-              active={vizSensorActive}
-              onChange={(isVisiable: boolean) => {
-                if (isVisiable && VisibilitySensor) setVizSensorActive(false);
-                start();
-              }}
-              delayedCall
-            >
-              <span ref={countUpRef} />
-            </VisibilitySensor>
-          )}
-        </CountUp>
-        {unit}
+      <span ref={container} className="mb-6 block font-secondary text-3xl font-bold text-secondary md:text-4xl xl:text-6xl">
+          <CountUp end={count} redraw={true}>
+            {({ countUpRef, start }) => {
+              isInView ?? start();
+              
+              return (
+                <span ref={countUpRef} />
+              )
+            }}
+          </CountUp>
+          {unit}
       </span>
       <div className="text-primary md:text-h6 xl:text-h4">{desc}</div>
     </>
