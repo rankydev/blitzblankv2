@@ -54,26 +54,22 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
 
   return (
     <>
-      {/* <Line className="line-bg fixed left-0 top-1/2 z-10 flex h-screen w-full -translate-y-1/2 justify-between" /> */}
       {/* <!-- End Top Header  --> */}
 
       <header ref={header} className={`header z-50 ${backgroundColor}`}>
         <nav className="navbar container relative z-30">
-          <Link href="/" className="navbar-brand" onClick={() => setExpand(false)}>
+          <Link
+            href="/"
+            className="navbar-brand"
+            onClick={() => setExpand(false)}
+          >
             <Image
               width={60}
               height={90}
               src="/images/blitzblank-logo.svg"
               alt="Blitzblank Gebäudereinigung Gmbh Logo"
-              style={{ width: '60px', height: '90px' }}
+              style={{ width: "60px", height: "90px" }}
             />
-            {/* <Image
-              width={30}
-              height={60}
-              src="/images/blitzblank-logo.svg"
-              alt="Blitzblank Gebäudereinigung Gmbh Logo"
-              style={{ width: '40px', height: '70px' }}
-            /> */}
           </Link>
           {/* <!-- End logo --> */}
 
@@ -130,7 +126,11 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
                       </li>
                     ) : (
                       <li key={i} className="nav-item">
-                        <Link href={item.url} className="nav-link" onClick={onExapndChange}>
+                        <Link
+                          href={item.url}
+                          className="nav-link"
+                          onClick={onExapndChange}
+                        >
                           {item.name}
                         </Link>
                       </li>
@@ -140,7 +140,6 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
               })}
             </ul>
             {/* <!-- End Navbar Nav --> */}
-            
           </div>
           {/* <!-- End Navbar Wrapper --> */}
         </nav>

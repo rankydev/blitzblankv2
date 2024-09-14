@@ -8,8 +8,8 @@ import AboutShape1 from "@/shapes/about-s-1";
 import { Button, Feature, Process, Projects } from "@/types";
 import Image from "next/image";
 import Services from "@/components/Services";
-import Brush from '@/shapes/lottie/Brush';
-import Spray from '@/shapes/lottie/Spray';
+import Brush from "@/shapes/lottie/Brush";
+import Spray from "@/shapes/lottie/Spray";
 
 const Home = () => {
   const homepage = getListPage("_index.md");
@@ -84,7 +84,10 @@ const Home = () => {
                       data-aos-delay={100 + i * 100}
                     >
                       <p className="inline-block align-middle text-base lg:text-lg font-medium text-primary">
-                        <DynamicIcon icon="FaCheck" className="mr-2 inline-block text-amber-500" />
+                        <DynamicIcon
+                          icon="FaCheck"
+                          className="mr-2 inline-block text-amber-500"
+                        />
                         {text}
                       </p>
                     </li>
@@ -213,8 +216,7 @@ const Home = () => {
         <div
           data-aos="fade-right-sm"
           className="pointer-events-none absolute right-0 top-52 hidden select-none lg:block"
-        >
-        </div>
+        ></div>
         {/* <!-- End Bg Shape --> */}
         {/* <!-- End background lines --> */}
       </section>

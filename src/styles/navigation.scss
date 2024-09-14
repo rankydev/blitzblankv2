@@ -36,7 +36,7 @@
     a.navbar-brand {
       width: 30px;
       height: 60px;
-      
+
       @media screen and (min-width: 1024px) {
         width: 60px;
         height: 90px;
@@ -48,7 +48,7 @@
     }
     .navbar {
       @apply py-0;
-      
+
       @media screen and (min-width: 1024px) {
         @apply py-3;
       }
@@ -75,6 +75,11 @@
 .navbar-brand {
   img {
     @apply max-h-full w-[130px] max-w-full xl:w-[158px];
+
+    @media screen and (min-width: 1024px) {
+      width: 90px !important;
+      height: 120px !important;
+    }
   }
 }
 

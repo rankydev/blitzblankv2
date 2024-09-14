@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Sauberkeit mit Qualität. Blitzblank."
+  title: "Sauberkeit mit Qualität. blitzblank."
   content: "Seit mehr als 35 Jahren garantieren wir Seriosität, Verlässlichkeit und Qualität in der Gebäudereinigung. Ihre Zufriedenheit steht bei uns an erster Stelle."
   images:
     main: "/images/banner/banner-image.jpg"
@@ -48,37 +48,67 @@ features:
   list:
     - title: "Baureinigung"
       icon: "FaRegPaperPlane"
-      description: "Die Baureinigung ist eine komplette Feinreinigung nach Bauabschluss. Hier werden alle Oberflächen von Mörtel, Farbe und Schmutz entfernt. Wir kümmern uns um die komplette Säuberung sowohl nach Fertigstellung von Neubauten, Sanierungen und Umbauten als auch nach Brandschäden und Wasserschäden."
+      description: "Unsere Baureinigung bietet eine umfassende Endreinigung nach Abschluss von Bauarbeiten.
+      Wir entfernen gründlich alle Rückstände wie Mörtel, Farbe und Schmutz von allen
+      Oberflächen. Dabei spielt es keine Rolle, ob es sich um Neubauten, Sanierungen, Umbauten
+      oder um die Reinigung nach Brand- und Wasserschäden handelt – wir sorgen dafür, dass Ihr
+      Objekt sauber und einwandfrei hinterlassen wird. Unser Team arbeitet zuverlässig und
+      effizient, sodass Sie sich auf einen reibungslosen Abschluss Ihres Bauprojekts verlassen
+      können."
       image: "bblbaureinigung.jpg"
     - title: "Fassadenreinigung"
       icon: "FaRegCopy"
-      description: "Ganz egal aus welcher Fassade ihre Immobilie besteht. Durch unsere professionelle Hochdruckreinigung zeigt sich Ihr Gebäude aussen wieder komplett sauber. Aluminiumfassaden und Aluminium Rahmen bekommen von uns eine Imprägnierung, um sie langfristig vor staubigen Umwelteinflüssen zu schützen.
-      Auch Markisen und Jalousien befreien wir von Schmutz und Staub."
+      description: "Unabhängig davon, aus welchem Material die Fassade Ihrer Immobilie besteht – mit unserer
+      professionellen Hochdruckreinigung erstrahlt Ihr Gebäude außen wieder in neuem Glanz.
+      Für Aluminiumfassaden und -rahmen bieten wir zusätzlich eine Imprägnierung an, die einen
+      langanhaltenden Schutz vor Staub und Umwelteinflüssen gewährleistet. Auch die Reinigung
+      von Markisen und Jalousien sind in unserem Serviceangebot inkludiert."
       image: "bblfassade.jpeg"
     - title: "Unterhaltsreinigung"
       icon: "FaRegLightbulb"
-      description: "Die Unterhaltsreinigung besteht aus wiederholenden Reinigungsarbeiten in einem festgelegten Zeitrahmen. Dabei können unsere Reinigungsarbeiten täglich, wöchentlich, monatlich oder auch in individuellen Zeitabständen erfolgen. Dieser Service dient Ihnen zur Pflege und Werterhaltung von Büros und Geschäftshäusern, Banken, Versicherungen, Behörden, Gastronomie, Schulen, Einkaufszentren, Wohn- und Pflegeheimen, Krankenhäusern und mehr."
+      description: "Eine Unterhaltsreinigung ist fortlaufende Reinigungsarbeit, die in festgelegten Abständen
+      durchgeführt wird. Ob täglich, wöchentlich, monatlich oder nach Ihrem individuellen
+      Zeitplan – wir passen uns flexibel Ihren Bedürfnissen an. Mit diesem Service sorgen wir
+      dafür, dass zum Beispiel Büros, Banken, Gastronomiebetriebe, Schulen, Einkaufszentren,
+      Wohn- und Pflegeheime oder Krankenhäuser sauber und gepflegt bleiben. Langfristig
+      unterstützen Sie so einen Werterhalt Ihrer Immobilie."
       image: "bblunterhaltsrei.jpeg"
     - title: "Fensterreinigung"
       icon: "FaRegObjectUngroup"
-      description: "Wir gewähren Ihnen glasklare und streifenfreie Sicht. Fenster aller Art mit und ohne Rahmen, Glastüren, Glastrennwände, Schaufenster, Profilverglasungen, Glasdächer, Wintergärten, Glaskuppeln bekommen von uns wieder den richtigen Glasglanz. Auch große Gebäude- und Fensterhöhen sind für unser blitzblank Team kein Hindernis."
+      description: "Egal wie groß oder hoch Ihre Fenster sind, wir bringen Ihre Fenster wieder zum Strahlen und
+      sorgen für Durchblick. Ohne Streifen und kristallklar. Neben Fenstern, reinigen wir auch
+      Glastüren, Glastrennwände, Schaufenster, Profilverglasungen, Glasdächer, Wintergärten
+      oder Glaskuppeln. Wir bringen jeden Glasbereich zum Strahlen."
       image: "bblfenstermontag.jpeg"
-    - title: "Grundreinigung"
+    - title: "Gebäudereinigung"
       icon: "FaRegObjectUngroup"
-      description: "In bestimmten Zeitabständen brauchen Gebäude eine komplette Grundreinigung. Sie dient der generellen Werterhaltung ihrer Immobilie. Dabei werden Räume einer grundlegenden Reinigung unterzogen. 
-      Bei der Grundreinigung entfernen wir haftende Verschmutzungen und abgenützte Pflegeschichten bzw. Rückstände, die das Aussehen der Oberfläche beeinträchtigen."
+      description: "Gebäude brauchen regelmäßig eine gründliche Reinigung. So trägt man zum Werteerhalt der
+      Immobilie bei. Dabei wird jeder Raum ordentlich auf Vordermann gebracht und auch
+      hartnäckige Flecke und abgenützte Pflegesichten entfernt. Damit jene Oberflächen wieder
+      (fast) wie neu ausschauen."
       image: "bblgrundreinigun.jpeg"
-    - title: "Bodenpflege"
+    - title: "Bodenreinigung"
       icon: "FaRegObjectUngroup"
-      description: "Gepflegte Böden leben länger und schauen dazu noch schön aus. Bei einer professionellen Bodenreinigung ist die Auswahl der richtigen Reinigungsmittel und Maschinen sehr wichtig. Wir pflegen und schützen Ihre geölten und versiegelten Holzböden im Innen- und Aussenbereich (Terrassen) als auch Ihre Linoleum- und PVC Bodenbeläge. Marmorböden, Granitböden, Kunststeinböden, Fliesenböden sowie Terracotta Platten reinigen und imprägieren wir sorgfältig."
+      description: "Gepflegte Böden sehen nicht nur toll aus, sondern bleiben auch länger schön. Bei der
+      professionellen Bodenreinigung ist es entscheidend, die passenden Reinigungsmittel und
+      Maschinen zu wählen. Wir bringen Ihre geölten und versiegelten Holzböden, ob drinnen
+      oder draußen auf der Terrasse, wieder zum Glänzen. Auch Linoleum, PVC, Marmor, Granit,
+      Kunststein, Fliesen und Terracotta-Platten bekommen bei uns die richtige Pflege und Schutz."
       image: "bblbodenflege.jpeg"
     - title: "Hausservice"
       icon: "FaRegObjectUngroup"
-      description: "Unser blitzblank Team bietet Ihnen einen seriösen Hausmeister Full-Service. Wir übernehmen gerne für Sie die regelmäßige Stiegenhausreinigung, Rasenpflege, Schneeräumung und diverse Kleinreparaturen."
+      description: "Unser blitzblank Team bietet Ihnen ein umfassendes Facility Management. Dabei kümmern
+      wir uns zuverlässig um die regelmäßige Stiegenhausreinigung, Rasenpflege, Schneeräumung
+      und diverse Kleinreparaturen."
       image: "bblhausservice.jpeg"
     - title: "Teppich-/ Polsterreinigung"
       icon: "FaRegObjectUngroup"
-      description: "Teppichböden und Polstermöbel sind durch ihre tägliche Beanspruchung einer hohen Belastung und Verunreinigung ausgesetzt. Für eine fasertiefe und hygienische Reinigung haben wir dafür die richtigen Reinigungsmethoden und -geräte. Mittels tiefgründigem Schamponieren mit anschließender Sprühextraktion, vorsichtiger Fleckenbehandlung und abschließender Imprägnierung machen wir Ihre Spannteppiche und Polster wieder frisch und sauber."
+      description: "Teppichböden und Polstermöbel werden oft täglich stark beansprucht und sind daher
+      besonders anfällig für Schmutz und Abnutzung. Für eine gründliche und hygienische
+      Reinigung setzen wir daher auf die passenden Methoden und Geräte. Mit tiefem
+      Schamponieren, gründlicher Sprühextraktion, gezielter Fleckenbehandlung und
+      abschließender Imprägnierung machen wir Ihre Teppiche und Polster wieder frisch und
+      sauber."
       image: "bblteppich.jpeg"
 
 # Process
