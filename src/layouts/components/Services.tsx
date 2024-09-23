@@ -69,11 +69,19 @@ const Services = ({ features }: { features: Feature }) => {
       {clickedIndex !== null && (
         <>
           <div
-            className="fixed top-0 left-0 w-full h-full z-50 bg-[rgba(0,0,0,0.2)]"
+            className="fixed top-0 left-0 w-full h-full z-50 bg-[rgba(0,0,0,0.5)]"
             onClick={() => expand(clickedIndex)}
           />
-          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full bg-transparent z-[51] pr-6">
-            <div className="w-full bg-white border rounded-xl border-primary shadow-xl flex flex-col lg:flex-row p-4">
+          <div
+            className="modal fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full bg-transparent z-[51]"
+            onClick={(e) => {
+              // Only trigger expand(null) if the click is on this element and not a child
+              if (e.target === e.currentTarget) {
+                expand(null);
+              }
+            }}
+          >
+            <div className="modal bg-white border rounded-xl border-primary shadow-xl flex flex-col lg:flex-row p-4 h-[550px]">
               <div className="col-12 lg:col-6 pt-12 lg:p-12 order-2 lg:order-1">
                 <h3 className="text-secondary lg:pb-4">
                   {features.list[clickedIndex].title}
@@ -83,20 +91,28 @@ const Services = ({ features }: { features: Feature }) => {
                 </p>
               </div>
 
-              <div className="col-12 lg:col-6 relative order-1 lg:order-2">
+              <div className="relative col-12 lg:col-6 relative order-1 lg:order-2">
                 <Image
                   width={700}
                   height={400}
-                  style={{ filter: "brightness(0.7)" }}
+                  style={{ filter: "brightness(1)", width: "100%" }}
                   className="banner-image w-100 h-full relative object-cover"
                   src={`/images/features/${features.list[clickedIndex].image}`}
                   alt="banner-image"
                 />
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/20 to-black/30"></div>
 
-                <span className="text-white text-2xl flex justify-end p-4 w-full absolute top-0">
+                <span
+                  className="text-white text-2xl flex justify-end p-4 w-full absolute top-0"
+                  style={{
+                    "--webkit-filter": "invert()",
+                    "mix-blend-mode": "difference",
+                    color: "white",
+                  }}
+                >
                   <DynamicIcon
                     icon="FaX"
-                    className="cursor-pointer opacity-80 hover:opacity-100"
+                    className="text-white cursor-pointer opacity-90 hover:opacity-100 hover:text-primary"
                     onClick={() => expand(clickedIndex)}
                   />
                 </span>

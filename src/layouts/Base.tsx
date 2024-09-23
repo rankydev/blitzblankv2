@@ -1,7 +1,5 @@
-import CallToAction from "@/partials/CallToAction";
 import Footer from "@/partials/Footer";
 import Header from "@/partials/Header";
-import Modal from "@/partials/Modal";
 import { Call_to_action } from "@/types";
 import ContactForm from "@/components/ContactForm";
 
@@ -19,7 +17,6 @@ const Base = ({
   return (
     <>
       <Header backgroundColor={backgroundColor} />
-      <Modal />
       <main>{children}</main>
       {callToAction && (
         <Footer
