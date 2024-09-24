@@ -9,8 +9,12 @@ const Services = ({ features }: { features: Feature }) => {
   const [clickedIndex, setClickedIndex] = useState<number | null>(null);
 
   const expand = useCallback(
-    (index: number) => {
-      setClickedIndex(index === clickedIndex ? null : index);
+    (index?: number | null) => {
+      if (index === undefined || index === null) {
+        setClickedIndex(null);
+      } else {
+        setClickedIndex(index === clickedIndex ? null : index);
+      }
     },
     [clickedIndex],
   );
@@ -81,8 +85,8 @@ const Services = ({ features }: { features: Feature }) => {
               }
             }}
           >
-            <div className="modal bg-white border rounded-xl border-primary shadow-xl flex flex-col lg:flex-row p-4 h-[550px]">
-              <div className="col-12 lg:col-6 pt-12 lg:p-12 order-2 lg:order-1">
+            <div className="modal bg-white border rounded-xl border-primary shadow-xl flex flex-col lg:flex-row p-4">
+              <div className="modal-content col-12 lg:col-6 pt-4 md:pt-8 lg:p-12 order-2 lg:order-1">
                 <h3 className="text-secondary lg:pb-4">
                   {features.list[clickedIndex].title}
                 </h3>
@@ -91,7 +95,7 @@ const Services = ({ features }: { features: Feature }) => {
                 </p>
               </div>
 
-              <div className="relative col-12 lg:col-6 relative order-1 lg:order-2">
+              <div className="image-wrapper relative col-12 lg:col-6 order-1 lg:order-2">
                 <Image
                   width={700}
                   height={400}
@@ -102,14 +106,7 @@ const Services = ({ features }: { features: Feature }) => {
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/20 to-black/30"></div>
 
-                <span
-                  className="text-white text-2xl flex justify-end p-4 w-full absolute top-0"
-                  style={{
-                    "--webkit-filter": "invert()",
-                    "mix-blend-mode": "difference",
-                    color: "white",
-                  }}
-                >
+                <span className="close-icon text-white text-2xl flex justify-end p-4 w-full absolute top-0">
                   <DynamicIcon
                     icon="FaX"
                     className="text-white cursor-pointer opacity-90 hover:opacity-100 hover:text-primary"

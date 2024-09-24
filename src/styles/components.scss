@@ -774,7 +774,43 @@ footer.footer-alt {
   }
 }
 
+// Modal
 .modal {
-  padding: 0 12rem;
-  width: 100%;
+  height: calc(100vh - 100px);
+  @apply sm:px-16 xl:px-48 lg:h-[550px] w-full overflow-hidden;
+
+  .modal-content,
+  .image-wrapper {
+    height: 50%;
+    @apply h-1/2 lg:h-full;
+  }
+
+  .modal-content {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+
+.close-icon {
+  --webkit-filter: invert();
+  mix-blend-mode: difference;
+  color: white;
+}
+
+/* Tailwind CSS for the brand-logo-container and brand-logo */
+.brand-logo-container {
+  width: 150px; /* Set a uniform width */
+  height: 100px; /* Set a uniform height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Required for layout="fill" */
+}
+
+.brand-logo {
+  object-fit: contain; /* Preserve aspect ratio, while fitting within the container */
 }

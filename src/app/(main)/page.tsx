@@ -104,10 +104,9 @@ const Home = () => {
       </section>
       {/* <!-- End Banner Section --> */}
 
-      <section className="md:section">
+      {/* <section className="md:section">
         <div className="shadow-default relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
           <div className="container">
-            <span>hier evtl kundenlogos oder namen...</span>
             <div className="row justify-center">
               {brands.map((item, i) => {
                 return (
@@ -130,7 +129,35 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section> */}
+      <section className="md:section">
+        <div className="shadow-default relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
+          <div className="container">
+            <div className="row justify-center gap-8">
+              {brands.map((item, i) => {
+                return (
+                  <div
+                    key={i}
+                    className="col-5 sm:col-3 lg:col-2 flex justify-center items-center"
+                    data-aos="fade-up-sm"
+                    data-aos-delay={`${150 + 50 * i}`}
+                  >
+                    <div className="brand-logo-container">
+                      <Image
+                        src={item.source}
+                        alt="brand logo"
+                        className="brand-logo"
+                        layout="fill" // This ensures the logo fills the container
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </section>
+
       {/* <!-- End Brands Section --> */}
 
       <section className="section features relative z-20 overflow-hidden after:-z-10">

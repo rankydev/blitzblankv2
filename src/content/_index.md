@@ -25,16 +25,13 @@ banner:
 
 # Brands
 brands:
-  - source: "/images/brands/1.png"
-  - source: "/images/brands/2.png"
-  - source: "/images/brands/3.png"
-  - source: "/images/brands/4.png"
-  - source: "/images/brands/5.png"
-  - source: "/images/brands/6.png"
-  - source: "/images/brands/7.png"
-  - source: "/images/brands/1.png"
-  - source: "/images/brands/2.png"
-  - source: "/images/brands/3.png"
+  - source: "/images/brands/ir.png"
+  - source: "/images/brands/st-gebhard.png"
+  - source: "/images/brands/oculo-vision.png"
+  - source: "/images/brands/typico2.png"
+  - source: "/images/brands/auto-blaser.svg"
+  - source: "/images/brands/vorarlberger-kinderdorf.svg"
+  - source: "/images/brands/wilhelm-mayer.svg"
 
 # Features
 features:
