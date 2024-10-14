@@ -44,7 +44,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
     return () => window.removeEventListener("scroll", stickyHeader);
   }, []);
 
-  const onExapndChange = () => {
+  const onExpandChange = () => {
     setExpand(!isExpand);
   };
 
@@ -54,33 +54,31 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
 
   return (
     <>
-      {/* <Line className="line-bg fixed left-0 top-1/2 z-10 flex h-screen w-full -translate-y-1/2 justify-between" /> */}
       {/* <!-- End Top Header  --> */}
 
       <header ref={header} className={`header z-50 ${backgroundColor}`}>
         <nav className="navbar container relative z-30">
-          <Link href="/" className="navbar-brand" onClick={() => setExpand(false)}>
+          <Link
+            href="/"
+            className="navbar-brand"
+            onClick={() => setExpand(false)}
+          >
             <Image
               width={60}
               height={90}
               src="/images/blitzblank-logo.svg"
               alt="Blitzblank Gebäudereinigung Gmbh Logo"
-              style={{ width: '60px', height: '90px' }}
+              className="image"
             />
-            {/* <Image
-              width={30}
-              height={60}
-              src="/images/blitzblank-logo.svg"
-              alt="Blitzblank Gebäudereinigung Gmbh Logo"
-              style={{ width: '40px', height: '70px' }}
-            /> */}
           </Link>
           {/* <!-- End logo --> */}
+
+          {/* style={{ width: "60px", height: "90px" }} */}
 
           <button
             className={`navbar-toggler group relative ml-auto lg:ml-4 ${isExpand ? "active" : ""}`}
             aria-label="navbar toggler"
-            onClick={onExapndChange}
+            onClick={onExpandChange}
           >
             <div className="relative flex h-[30px] w-[30px] transform items-center justify-center overflow-hidden rounded-full ring-0 transition-all duration-200">
               <div className="flex h-[15px] w-[18px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300 group-[.active]:h-[21px]">
@@ -130,7 +128,11 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
                       </li>
                     ) : (
                       <li key={i} className="nav-item">
-                        <Link href={item.url} className="nav-link" onClick={onExapndChange}>
+                        <Link
+                          href={item.url}
+                          className="nav-link"
+                          onClick={onExpandChange}
+                        >
                           {item.name}
                         </Link>
                       </li>
@@ -140,7 +142,6 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
               })}
             </ul>
             {/* <!-- End Navbar Nav --> */}
-            
           </div>
           {/* <!-- End Navbar Wrapper --> */}
         </nav>

@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Blitzblank Gebäudereinigung GmbH",
+    "title": "blitzblank Gebäudereinigung GmbH",
     "base_url": "https://blitzblank-bregenz.at",
     "base_path": "/",
     "trailing_slash": false,
@@ -38,28 +38,17 @@
     "lable": "Learn More"
   },
 
-  "navigation_buttons": [
-    {
-      "enable": "true",
-      "label": "Login",
-      "link": "/login"
-    },
-    {
-      "enable": true,
-      "label": "Get Started",
-      "link": "/contact"
-    }
-  ],
+  "navigation_buttons": [],
 
   "disqus": {
     "enable": true,
-    "shortname": "themefisher-template",
+    "shortname": "ranky-template",
     "settings": {}
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "blitzblank Gebäudereinigung GmbH",
     "meta_image": "/images/og-image.png",
-    "meta_description": "shydea"
+    "meta_description": "blitzblank Gebäudereinigung GmbH"
   }
 }

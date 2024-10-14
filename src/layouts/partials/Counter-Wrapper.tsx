@@ -43,20 +43,23 @@ const CounterWrapper = ({
                   </li>
                 ))}
               </ul>
+              <div>
+                <span className="block text-right mt-2">
+                  Stand: September 2024
+                </span>
+              </div>
 
               {/* <!-- Start Bg Shape --> */}
               <div
                 data-aos="fade-up-md"
                 data-aos-delay="50"
                 className="pointer-events-none absolute bottom-[-55px] left-[-30px] -z-10 hidden select-none lg:block"
-              >
-              </div>
+              ></div>
               <div
                 data-aos="fade-down-md"
                 data-aos-delay="50"
                 className="pointer-events-none absolute right-[-40px] top-[40px] -z-10 hidden select-none lg:block"
-              >
-              </div>
+              ></div>
               {/* <!-- End Bg Shape --> */}
             </div>
           </div>

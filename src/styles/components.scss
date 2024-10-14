@@ -114,7 +114,7 @@
   &::after {
     @apply bg-cover bg-top bg-no-repeat;
 
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -751,7 +751,7 @@ footer.footer-alt {
 
 .widget {
   &-title {
-    @apply mb-4 font-primary text-[18px] font-semibold text-white md:mb-8;
+    @apply mb-4 font-primary text-[18px] font-semibold text-primary md:mb-8;
   }
   &-content {
     @apply flex flex-col gap-3 md:gap-6;
@@ -772,4 +772,45 @@ footer.footer-alt {
   a {
     @apply underline underline-offset-2 hover:no-underline;
   }
+}
+
+// Modal
+.modal {
+  height: calc(100vh - 100px);
+  @apply sm:px-16 xl:px-48 lg:h-[550px] w-full overflow-hidden;
+
+  .modal-content,
+  .image-wrapper {
+    height: 50%;
+    @apply h-1/2 lg:h-full;
+  }
+
+  .modal-content {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+
+.close-icon {
+  --webkit-filter: invert();
+  mix-blend-mode: difference;
+  color: white;
+}
+
+/* Tailwind CSS for the brand-logo-container and brand-logo */
+.brand-logo-container {
+  width: 150px; /* Set a uniform width */
+  height: 100px; /* Set a uniform height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Required for layout="fill" */
+}
+
+.brand-logo {
+  object-fit: contain; /* Preserve aspect ratio, while fitting within the container */
 }

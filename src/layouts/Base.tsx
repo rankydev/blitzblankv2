@@ -1,8 +1,6 @@
-import CallToAction from "@/partials/CallToAction";
 import Footer from "@/partials/Footer";
 import Header from "@/partials/Header";
 import { Call_to_action } from "@/types";
-import ContactForm from '@/components/ContactForm';
 
 const Base = ({
   backgroundColor = "bg-quaternary/20",
@@ -16,19 +14,18 @@ const Base = ({
   isNotFoundPage?: boolean;
 }) => {
   return (
-    <>
+    // <>
+    <div className={isNotFoundPage ? 'not-found' : ''}>
       <Header backgroundColor={backgroundColor} />
       <main>{children}</main>
       {callToAction && (
-        <Footer
-          hasCallToAction={isNotFoundPage ? !isNotFoundPage : !!callToAction}
-        >
-          {/* {!isNotFoundPage && <CallToAction callToAction={callToAction} />} */}
-          {!isNotFoundPage && <ContactForm />}
-        </Footer>
+        <Footer hasCallToAction={isNotFoundPage ? !isNotFoundPage : !!callToAction}/>
       )}
-    </>
+    {/* </> */}
+    </div>
   );
 };
 
 export default Base;
+
+

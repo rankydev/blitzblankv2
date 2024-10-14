@@ -8,8 +8,9 @@ import AboutShape1 from "@/shapes/about-s-1";
 import { Button, Feature, Process, Projects } from "@/types";
 import Image from "next/image";
 import Services from "@/components/Services";
-import Brush from '@/shapes/lottie/Brush';
-import Spray from '@/shapes/lottie/Spray';
+import Brush from "@/shapes/lottie/Brush";
+import Spray from "@/shapes/lottie/Spray";
+import ContactForm from "@/components/ContactForm";
 
 const Home = () => {
   const homepage = getListPage("_index.md");
@@ -84,7 +85,10 @@ const Home = () => {
                       data-aos-delay={100 + i * 100}
                     >
                       <p className="inline-block align-middle text-base lg:text-lg font-medium text-primary">
-                        <DynamicIcon icon="FaCheck" className="mr-2 inline-block text-amber-500" />
+                        <DynamicIcon
+                          icon="FaCheck"
+                          className="mr-2 inline-block text-amber-500"
+                        />
                         {text}
                       </p>
                     </li>
@@ -102,25 +106,25 @@ const Home = () => {
       {/* <!-- End Banner Section --> */}
 
       <section className="md:section">
-        <div className="shadow-default relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
+        <div className="relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
           <div className="container">
-            <span>hier evtl kundenlogos oder namen...</span>
-            <div className="row justify-center">
+            <div className="row justify-center gap-8">
               {brands.map((item, i) => {
                 return (
                   <div
                     key={i}
-                    className="col-5 sm:col-3 lg:col-2"
+                    className="col-5 sm:col-3 lg:col-2 flex justify-center items-center"
                     data-aos="fade-up-sm"
                     data-aos-delay={`${150 + 50 * i}`}
                   >
-                    <Image
-                      width={169}
-                      height={92}
-                      src={item.source}
-                      alt="brand logo"
-                      className="inline-block py-4 sm:mx-auto"
-                    />
+                    <div className="brand-logo-container">
+                      <Image
+                        src={item.source}
+                        alt="brand logo"
+                        className="brand-logo"
+                        layout="fill" // This ensures the logo fills the container
+                      />
+                    </div>
                   </div>
                 );
               })}
@@ -213,11 +217,11 @@ const Home = () => {
         <div
           data-aos="fade-right-sm"
           className="pointer-events-none absolute right-0 top-52 hidden select-none lg:block"
-        >
-        </div>
+        ></div>
         {/* <!-- End Bg Shape --> */}
         {/* <!-- End background lines --> */}
       </section>
+      <ContactForm />
       {/* <!-- End Articles Section --> */}
     </>
   );
