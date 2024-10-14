@@ -1,8 +1,8 @@
 {
   "name": "spydea-nextjs",
   "version": "1.1.0",
-  "description": "Spydea Saas Theme",
-  "author": "themefisher",
+  "description": "blitzblank Gebäudereinigung GmbH",
+  "author": "blitzblank Gebäudereinigung GmbH",
   "license": "UNLICENSED",
   "packageManager": "yarn@1.22.19",
   "scripts": {

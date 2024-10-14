@@ -44,7 +44,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
     return () => window.removeEventListener("scroll", stickyHeader);
   }, []);
 
-  const onExapndChange = () => {
+  const onExpandChange = () => {
     setExpand(!isExpand);
   };
 
@@ -68,15 +68,17 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
               height={90}
               src="/images/blitzblank-logo.svg"
               alt="Blitzblank Gebäudereinigung Gmbh Logo"
-              style={{ width: "60px", height: "90px" }}
+              className="image"
             />
           </Link>
           {/* <!-- End logo --> */}
 
+          {/* style={{ width: "60px", height: "90px" }} */}
+
           <button
             className={`navbar-toggler group relative ml-auto lg:ml-4 ${isExpand ? "active" : ""}`}
             aria-label="navbar toggler"
-            onClick={onExapndChange}
+            onClick={onExpandChange}
           >
             <div className="relative flex h-[30px] w-[30px] transform items-center justify-center overflow-hidden rounded-full ring-0 transition-all duration-200">
               <div className="flex h-[15px] w-[18px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300 group-[.active]:h-[21px]">
@@ -129,7 +131,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
                         <Link
                           href={item.url}
                           className="nav-link"
-                          onClick={onExapndChange}
+                          onClick={onExpandChange}
                         >
                           {item.name}
                         </Link>

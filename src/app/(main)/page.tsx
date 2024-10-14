@@ -10,6 +10,7 @@ import Image from "next/image";
 import Services from "@/components/Services";
 import Brush from "@/shapes/lottie/Brush";
 import Spray from "@/shapes/lottie/Spray";
+import ContactForm from "@/components/ContactForm";
 
 const Home = () => {
   const homepage = getListPage("_index.md");
@@ -104,34 +105,8 @@ const Home = () => {
       </section>
       {/* <!-- End Banner Section --> */}
 
-      {/* <section className="md:section">
-        <div className="shadow-default relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
-          <div className="container">
-            <div className="row justify-center">
-              {brands.map((item, i) => {
-                return (
-                  <div
-                    key={i}
-                    className="col-5 sm:col-3 lg:col-2"
-                    data-aos="fade-up-sm"
-                    data-aos-delay={`${150 + 50 * i}`}
-                  >
-                    <Image
-                      width={169}
-                      height={92}
-                      src={item.source}
-                      alt="brand logo"
-                      className="inline-block py-4 sm:mx-auto"
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="md:section">
-        <div className="shadow-default relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
+        <div className="relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
           <div className="container">
             <div className="row justify-center gap-8">
               {brands.map((item, i) => {
@@ -157,7 +132,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* <!-- End Brands Section --> */}
 
       <section className="section features relative z-20 overflow-hidden after:-z-10">
@@ -247,6 +221,7 @@ const Home = () => {
         {/* <!-- End Bg Shape --> */}
         {/* <!-- End background lines --> */}
       </section>
+      <ContactForm />
       {/* <!-- End Articles Section --> */}
     </>
   );

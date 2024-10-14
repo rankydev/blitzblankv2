@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactForm from "@/components/ContactForm";
 
 function About() {
   return (
@@ -53,6 +54,7 @@ function About() {
           />
         </div>
       </section>
+      <ContactForm />
     </>
   );
 }

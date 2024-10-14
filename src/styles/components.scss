@@ -751,7 +751,7 @@ footer.footer-alt {
 
 .widget {
   &-title {
-    @apply mb-4 font-primary text-[18px] font-semibold text-white md:mb-8;
+    @apply mb-4 font-primary text-[18px] font-semibold text-primary md:mb-8;
   }
   &-content {
     @apply flex flex-col gap-3 md:gap-6;
