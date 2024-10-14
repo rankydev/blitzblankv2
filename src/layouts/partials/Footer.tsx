@@ -84,7 +84,7 @@ const Footer = ({
 
           {/* <!-- End Footer Widget --> */}
           <hr className="h-[1px] border-0 border-b border-opacity-30 bg-primary" />
-          <div className="flex w-full justify-end gap-4">
+          <div className="flex w-full justify-center sm:justify-end gap-4">
             <Link
               className="font-medium underline underline-offset-2 hover:no-underline"
               href="datenschutz-impressum"
