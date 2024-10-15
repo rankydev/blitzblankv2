@@ -31,7 +31,7 @@ function About() {
                   className="w-full h-full"
                   style={{ filter: "brightness(0.9)" }}
                   data-aos="fade-up-sm"
-                  src="/images/about/Geschaeftsführung.jpg"
+                  src="/images/about/ueber-uns.jpg"
                   alt="blitzblank Geschäftsführung"
                 />
               </div>
