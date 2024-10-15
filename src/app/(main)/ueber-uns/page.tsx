@@ -17,7 +17,7 @@ function About() {
               <p
                 data-aos="fade-up-sm"
                 data-aos-delay="150"
-                className="mb-12 text-lg lg:col-6"
+                className="mb-12 text-2xl lg:text-5xl lg:leading-normal"
               >
                 Die blitzblank Gebäudereinigung GmbH besteht seit über 35 Jahren
                 und steht für Seriosität, Verlässlichkeit und Qualität. Unser
