@@ -1,4 +1,21 @@
-const ContactForm = async () => {
+'use client'
+ 
+import { useRouter } from 'next/navigation'
+import { useEffect }  from 'react'
+
+const ContactForm = () => {
+  // const router = useRouter()
+
+  // useEffect(() => {
+  //     const kontaktElement = document.getElementById('kontakt');
+  //     const url = window.location.href;
+
+  //     if (url.includes('#kontakt') && kontaktElement) {
+  //       kontaktElement.scrollIntoView({ behavior: 'smooth' });
+  //     } else {
+  //       router.push('/#kontakt');
+  //     }
+  // })
   return (
     <div id="kontakt" className="container-fluid bg-primary relative z-30 pt-24 lg:pt-[150px] pb-28 md:pb-40">
       <div className="row relative">
