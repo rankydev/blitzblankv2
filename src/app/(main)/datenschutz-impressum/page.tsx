@@ -174,6 +174,7 @@ const DatenschutzImpressum = () => {
           Max-Haller-Straße 2, 6900 Bregenz
           <br />
           T +43 5574 43714
+          
           <br />
           Zuständiges Finanzamt: Bregenz
           <br />
