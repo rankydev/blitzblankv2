@@ -35,7 +35,16 @@ const ContactForm = () => {
 
   const [feedback, setFeedback] = useState({ type: "", message: "" });
 
-  const onSubmit = async (data) => {
+  interface FormData {
+    fname: string;
+    lname: string;
+    email: string;
+    phone?: string; // Optional
+    purpose: string;
+    message: string;
+  }
+
+  const onSubmit = async (data: FormData) => {
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
