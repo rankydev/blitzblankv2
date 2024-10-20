@@ -52,7 +52,7 @@ features:
       Objekt sauber und einwandfrei hinterlassen wird. Unser Team arbeitet zuverlässig und
       effizient, sodass Sie sich auf einen reibungslosen Abschluss Ihres Bauprojekts verlassen
       können."
-      image: "Baureinigung.jpeg"
+      image: "Baureinigung-min.jpeg"
     - title: "Fassadenreinigung"
       icon: "FaRegCopy"
       description: "Unabhängig davon, aus welchem Material die Fassade Ihrer Immobilie besteht – mit unserer
@@ -60,7 +60,7 @@ features:
       Für Aluminiumfassaden und -rahmen bieten wir zusätzlich eine Imprägnierung an, die einen
       langanhaltenden Schutz vor Staub und Umwelteinflüssen gewährleistet. Auch die Reinigung
       von Markisen und Jalousien sind in unserem Serviceangebot inkludiert."
-      image: "Fassadenreinigung.jpeg"
+      image: "Fassadenreinigung-min.jpeg"
     - title: "Unterhaltsreinigung"
       icon: "FaRegLightbulb"
       description: "Eine Unterhaltsreinigung ist fortlaufende Reinigungsarbeit, die in festgelegten Abständen
@@ -69,21 +69,21 @@ features:
       dafür, dass zum Beispiel Büros, Banken, Gastronomiebetriebe, Schulen, Einkaufszentren,
       Wohn- und Pflegeheime oder Krankenhäuser sauber und gepflegt bleiben. Langfristig
       unterstützen Sie so einen Werterhalt Ihrer Immobilie."
-      image: "Unterhaltsreinigung.jpeg"
+      image: "Unterhaltsreinigung-min.jpeg"
     - title: "Fensterreinigung"
       icon: "FaRegObjectUngroup"
       description: "Egal wie groß oder hoch Ihre Fenster sind, wir bringen Ihre Fenster wieder zum Strahlen und
       sorgen für Durchblick. Ohne Streifen und kristallklar. Neben Fenstern, reinigen wir auch
       Glastüren, Glastrennwände, Schaufenster, Profilverglasungen, Glasdächer, Wintergärten
       oder Glaskuppeln. Wir bringen jeden Glasbereich zum Strahlen."
-      image: "Fensterreinigung.jpeg"
+      image: "Fensterreinigung-min.jpeg"
     - title: "Gebäudereinigung"
       icon: "FaRegObjectUngroup"
       description: "Gebäude brauchen regelmäßig eine gründliche Reinigung. So trägt man zum Werteerhalt der
       Immobilie bei. Dabei wird jeder Raum ordentlich auf Vordermann gebracht und auch
       hartnäckige Flecke und abgenützte Pflegesichten entfernt. Damit jene Oberflächen wieder
       (fast) wie neu ausschauen."
-      image: "Grundreinigung.jpeg"
+      image: "Grundreinigung-min.jpeg"
     - title: "Bodenreinigung"
       icon: "FaRegObjectUngroup"
       description: "Gepflegte Böden sehen nicht nur toll aus, sondern bleiben auch länger schön. Bei der
@@ -91,13 +91,13 @@ features:
       Maschinen zu wählen. Wir bringen Ihre geölten und versiegelten Holzböden, ob drinnen
       oder draußen auf der Terrasse, wieder zum Glänzen. Auch Linoleum, PVC, Marmor, Granit,
       Kunststein, Fliesen und Terracotta-Platten bekommen bei uns die richtige Pflege und Schutz."
-      image: "Bodenpflege.jpeg"
+      image: "Bodenpflege-min.jpeg"
     - title: "Hausservice"
       icon: "FaRegObjectUngroup"
       description: "Unser blitzblank Team bietet Ihnen ein umfassendes Facility Management. Dabei kümmern
       wir uns zuverlässig um die regelmäßige Stiegenhausreinigung, Rasenpflege, Schneeräumung
       und diverse Kleinreparaturen."
-      image: "Hausservice.jpeg"
+      image: "Hausservice-min.jpeg"
     - title: "Teppich-/ Polsterreinigung"
       icon: "FaRegObjectUngroup"
       description: "Teppichböden und Polstermöbel werden oft täglich stark beansprucht und sind daher
@@ -106,7 +106,7 @@ features:
       Schamponieren, gründlicher Sprühextraktion, gezielter Fleckenbehandlung und
       abschließender Imprägnierung machen wir Ihre Teppiche und Polster wieder frisch und
       sauber."
-      image: "Teppich-Polsterreinigung.jpeg"
+      image: "Teppich-Polsterreinigung-min.jpeg"
 
 # Process
 process:
