@@ -109,7 +109,6 @@ const ContactForm = () => {
                   }`}
                   placeholder="Geben Sie bitte Ihren Vornamen ein"
                   id="fname"
-                  name="fname"
                   {...register("fname")}
                 />
                 {errors.fname && (
@@ -128,7 +127,6 @@ const ContactForm = () => {
                   }`}
                   placeholder="Geben Sie bitte Ihren Nachnamen ein"
                   id="lname"
-                  name="lname"
                   {...register("lname")}
                 />
                 {errors.lname && (
@@ -147,7 +145,6 @@ const ContactForm = () => {
                   }`}
                   placeholder="Geben Sie bitte Ihre E-Mail Adresse ein"
                   id="email"
-                  name="email"
                   {...register("email")}
                 />
                 {errors.email && (
@@ -166,7 +163,6 @@ const ContactForm = () => {
                   }`}
                   placeholder="Geben Sie bitte Ihre Telefonnummer ein"
                   id="phone"
-                  name="phone"
                   {...register("phone")}
                 />
                 {errors.phone && (
@@ -200,7 +196,6 @@ const ContactForm = () => {
                   Nachricht*
                 </label>
                 <textarea
-                  name="message"
                   className={`form-textarea ${
                     errors.message ? "border-red-500" : "border-gray-300"
                   }`}
