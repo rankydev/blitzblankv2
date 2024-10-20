@@ -226,6 +226,12 @@
   @apply mb-3 block font-semibold;
 }
 
+form {
+  .error {
+    @apply text-red-500;
+  }
+}
+
 // Social Icon
 .social-icons {
   @apply flex flex-wrap items-center gap-4 font-secondary;
