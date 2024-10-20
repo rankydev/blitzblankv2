@@ -801,12 +801,6 @@ footer.footer-alt {
   }
 }
 
-.close-icon {
-  --webkit-filter: invert();
-  mix-blend-mode: difference;
-  color: white;
-}
-
 /* Tailwind CSS for the brand-logo-container and brand-logo */
 .brand-logo-container {
   width: 150px; /* Set a uniform width */

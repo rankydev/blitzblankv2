@@ -110,17 +110,20 @@ const Services = ({ features }: { features: Feature }) => {
                 <span className="close-icon text-white text-2xl flex justify-end p-4 w-full absolute top-0">
                   <DynamicIcon
                     icon="FaX"
-                    className="text-white cursor-pointer opacity-90 hover:opacity-100 hover:text-primary"
+                    className={`${
+                      clickedIndex === 5 || clickedIndex === 1
+                        ? "text-black"
+                        : "text-white"
+                    } cursor-pointer opacity-90 hover:opacity-100`}
                     onClick={() => expand(clickedIndex)}
                   />
                 </span>
                 <div className="flex justify-between absolute bottom-0 p-4 w-full select-none">
                   {(clickedIndex > 0 && (
                     <span
-                      className="text-white lg:text-2xl flex gap-2 items-center cursor-pointer hover:underline opacity-100 hover:opacity-90 leading-none"
+                      className="text-white lg:text-2xl flex gap-2 items-center hover:underline opacity-100 hover:opacity-90 leading-none cursor-pointer"
                       onClick={() => expand(clickedIndex - 1)}
                     >
-                      {/* <DynamicIcon icon="FaArrowLeft" className="w-[12px] lg:w-[18px]" /> */}
                       <span className="text-base lg:text-2xl">
                         {features.list[clickedIndex - 1].title}
                       </span>
