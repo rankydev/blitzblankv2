@@ -39,7 +39,7 @@ const ContactForm = () => {
     fname: string;
     lname: string;
     email: string;
-    phone?: string; // Optional
+    phone?: string | null; // Optional
     purpose: string;
     message: string;
   }
