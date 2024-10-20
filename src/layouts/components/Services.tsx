@@ -100,6 +100,7 @@ const Services = ({ features }: { features: Feature }) => {
                   width={700}
                   height={400}
                   style={{ filter: "brightness(1)", width: "100%" }}
+                  priority={true}
                   className="banner-image w-100 h-full relative object-cover"
                   src={`/images/features/${features.list[clickedIndex].image}`}
                   alt="banner-image"
