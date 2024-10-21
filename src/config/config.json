@@ -4,7 +4,7 @@
     "base_url": "https://blitzblank-bregenz.at",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/favicon.ico",
     "logo": "/images/blitzblank-logo.png",
     "logo_darkmode": "/images/blitzblank-logo.png",
     "logo_width": "158",
